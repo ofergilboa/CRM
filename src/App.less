@@ -1,0 +1,160 @@
+@color1: #2e3952;
+@color2: #e6e6ec;
+@color3: #c0d5fd;
+@color4: rgb(255, 255, 255);
+
+
+.App {
+   text-align: center;
+   background-color: @color2;
+   .App-header{
+      width: 100vw;
+      box-shadow: 0px 0px 10px 0px black;
+      background-color: @color1;
+      height: 7.5vh;
+      display: flex;
+      position: fixed;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      font-size: calc(18px + 2vmin);
+      font-family: 'Courier New', Courier, monospace;
+      color: @color4;
+      .Headers{
+         background-color: @color1;
+         display: flex;
+         align-items: left;
+         margin-left: 15px;
+         .Header{
+            // box-shadow: 0px 0px 0px 0.1px rgb(255, 255, 255);
+            margin-right: 25px;
+            text-decoration-line: none;
+            color: @color2; 
+            padding: 9px;
+         }
+      }
+   }
+   .App-body{
+      background-color: @color2;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      .PopUp{
+         font-family: 'Courier New', Courier, monospace;
+         margin-top: 20vh;
+         margin-left: 31vw;
+         position: fixed;
+         width: 30vw;
+         height : 25vh;
+         background-color: @color1;
+         display: grid;
+         align-items: center;
+         justify-content: center;
+         color: @color2;
+         border-radius: 15px;
+         box-shadow: 5px 8px 25px 1px black;
+         .inp{
+            background-color: @color2;
+            color: @color2;
+            border-radius: 5px;
+            .inpB{
+               color: aqua;
+               // border-radius: 5px;
+               // background-color: @color1;
+
+
+            }
+
+         }
+      }
+      .Clients{
+
+         margin-top: 3vmax;
+         width: 92vw;
+         background-color: @color2;
+         text-align: left;
+         border-collapse: collapse;
+         .Client{
+            background-color: @color2;
+            text-align: left;
+            :hover{
+               background-color: @color4;
+               // color: aqua;
+            }
+            
+            .ClientTD{
+               height: 4.5vh;
+               border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+               padding: 3px;
+               padding-left: 15px;
+               padding-right: 25px;
+               color: @color1;
+            }
+            .ClientTD2{
+               .ClientTD();
+               text-align: center;
+               padding-left: 5px;
+               padding-right: 5px;
+            }
+            .ClientTH{
+               .ClientTD();
+               // border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+               border-top: 1px solid rgba(255, 255, 255, 0.4);
+               background-color: fade(@color3, 20%);
+            }
+            .ClientTH2{
+               .ClientTH();
+               text-align: center;
+               padding-left: 5px;
+               padding-right: 5px;
+            }
+         }
+      }
+      .Actions{
+         min-height: 90vh;
+         padding-left: 15px;
+         text-align: left;
+         margin-top:12vh; 
+         .Update{
+            display: grid;
+            width: 40vw;
+            min-width: 500px;
+            background-color:@color4;
+            // grid-auto-columns: 3fr 1fr 2fr 1fr 2fr;
+            // grid-auto-rows: 1fr 1fr 1fr;
+            // grid-template-areas: "o1 . e2 . o3" "e1 . o2 . e3" "s1 . . . s2";
+            // .owner{
+            //    .o1{grid-area: o1 } .o2{grid-area: o2 } .o3{ grid-area: o3 };
+            // }
+            // .email{
+            //    .e1{grid-area: e1 } .e2{grid-area: e2 } .e3{ grid-area: e3 };
+            // }
+            // .sale{
+            //    .s1{grid-area: s1 } .s2{grid-area: s2 };
+            // }
+         }
+
+      }
+   }
+   .App-footer{
+      background-color: @color3;
+   }
+}
+ 
+//  tr{
+//    :hover{
+//     background-color: blue;
+//  }}
+
+
+
+
+
+
+ .App-link {
+   color: #61dafb;
+ }
+ 
+
+ 
