@@ -37,7 +37,7 @@
 }
 .App .App-body .PopUp {
   font-family: 'Courier New', Courier, monospace;
-  margin-top: 20vh;
+  margin-top: 10vh;
   margin-left: 31vw;
   position: fixed;
   width: 30vw;
@@ -59,11 +59,34 @@
   color: aqua;
 }
 .App .App-body .Clients {
-  margin-top: 3vmax;
+  margin-top: 2vh;
   width: 92vw;
   background-color: #e6e6ec;
   text-align: left;
   border-collapse: collapse;
+}
+.App .App-body .Clients .Search .inpS {
+  margin-top: 9vh;
+  margin-right: 25px;
+  margin-left: 13px;
+  background-color: #ffffff;
+  color: #2e3952;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 4px #2e3952;
+  padding: 3px 18px ;
+}
+.App .App-body .Clients .Search .button {
+  background-color: rgba(192, 213, 253, 0.2);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 2px 4px #2e3952;
+  color: #2e3952;
+  padding: 1px 12px 1px 10px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 .App .App-body .Clients .Client {
   background-color: #e6e6ec;

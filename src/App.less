@@ -42,7 +42,7 @@
       justify-content: center;
       .PopUp{
          font-family: 'Courier New', Courier, monospace;
-         margin-top: 20vh;
+         margin-top: 10vh;
          margin-left: 31vw;
          position: fixed;
          width: 30vw;
@@ -69,8 +69,32 @@
          }
       }
       .Clients{
-
-         margin-top: 3vmax;
+         .Search{
+            .inpS{
+               margin-top:9vh; 
+               margin-right:25px; 
+               margin-left:13px; 
+               background-color: @color4;
+               color: @color1;
+               border-radius: 5px;
+               box-shadow: inset 1px 1px 4px @color1;
+               padding: 3px 18px ;
+            }
+            .button {
+               background-color: fade(@color3, 20%);
+               border-radius: 5px;
+               border: none;
+               box-shadow: 1px 2px 4px @color1;
+               color: @color1;
+               padding: 1px 12px 1px 10px;
+               margin-right: 10px;
+               text-align: center;
+               text-decoration: none;
+               display: inline-block;
+               font-size: 16px;
+             }
+         }
+         margin-top: 2vh;
          width: 92vw;
          background-color: @color2;
          text-align: left;
@@ -81,8 +105,7 @@
             :hover{
                background-color: @color4;
                // color: aqua;
-            }
-            
+            }            
             .ClientTD{
                height: 4.5vh;
                border-bottom: 1px solid rgba(255, 255, 255, 0.4);

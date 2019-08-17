@@ -10,8 +10,7 @@ router.get(`/clients`, function (req, res) {
 })
 
 router.post(`/client`, async function (req, response) {
-   console.log("sss")
-   
+   // console.log("sss")
    let client = new Client(req.body)
    await client.save()
    response.send(`saved to db`)

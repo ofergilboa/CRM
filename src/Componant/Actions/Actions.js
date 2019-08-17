@@ -41,9 +41,9 @@ class Actions extends Component {
 
    transferVal = async (newVal) => {
       //put request to DB
-      console.log("2")
+      // console.log("2")
       let clientVal = { client: this.state.client, newV: newVal.val }
-      console.log(clientVal)
+      // console.log(clientVal)
       await axios.post(`http://localhost:8989/update/${newVal.key}`, clientVal)
       this.props.r()
    }
