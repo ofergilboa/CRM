@@ -52,11 +52,19 @@
 }
 .App .App-body .PopUp .inp {
   background-color: #e6e6ec;
-  color: #e6e6ec;
+  color: #2e3952;
   border-radius: 5px;
+  box-shadow: inset 1px 1px 4px #2e3952;
+  margin-left: 13px;
+  margin-top: 8px;
+  padding: 3px 0px 2px 6px;
+  left: 0px;
 }
-.App .App-body .PopUp .inp .inpB {
-  color: aqua;
+.App .App-body .PopUp .inpB {
+  color: #2e3952;
+  margin: 20px 35px 6px;
+  border-radius: 5px;
+  background-color: #c0d5fd;
 }
 .App .App-body .Clients {
   margin-top: 2vh;

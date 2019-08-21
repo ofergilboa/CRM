@@ -4,13 +4,14 @@ class Search extends Component {
    constructor() {
       super()
       this.state = {
-         filterBy: "",
-         inputVal: ""
+         filterBy: "name",
+         inputVal: "Croatia"
       }
    }
 
+
    updateState = (event) => {
-      // this.props.updateState()
+      this.props.updateState(event)
       const target = event.target
       const value = target.value
       const key = target.name
@@ -29,10 +30,10 @@ class Search extends Component {
          <div>
 
             <div className="Search" onChange={this.updateState}>
-               <input list="filteredCategory" className="inpS" placeholder={this.state.filterBy} type="text" onInput={this.updateState}/>
-               <datalist id="filteredCategory">
-                  {this.props.c.map(c => <option value={c[this.state.filterBy]} ></option>)}
-               </datalist>
+               <input list="filteredCategory" name="inputVal" className="inpS" placeholder={this.state.filterBy} type="text" onchange={this.updateState}/>
+               {/* <datalist id="filteredCategory"> */}
+                  {/* {this.props.c.map(c => <option value={c[this.state.filterBy]} ></option>)} */}
+               {/* </datalist> */}
 
                <select className="button" name="filterBy" value={this.state.filterBy} onChange={this.updateState}>
                   <option value="name">name</option>

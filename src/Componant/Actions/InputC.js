@@ -13,9 +13,9 @@ class InputC extends Component {
       const value = target.value
       this.setState({
          client: value
-      }, function () { 
+      }, function () {
          console.log(this.state)
-         this.setClientI() 
+         this.setClientI()
       })
    }
 
@@ -28,7 +28,8 @@ class InputC extends Component {
          <div className="InputC">
             <div> UPDATE </div>
 
-            <div>Client: {<input list="clients" name="client" className="addInput" value={this.state.client} onInput={this.updateState} />}
+            <div>Client:
+               <input list="clients" name="client" className="addInput" value={this.state.client} onInput={this.updateState} />
                <datalist id="clients">
                   {this.props.clients.map(c => <option value={c.name} ></option>)}
                </datalist>

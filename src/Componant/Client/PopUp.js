@@ -31,11 +31,12 @@ class PopUp extends Component {
 
 
    render() {
+      console.log(this.state.name)
       return (
          <div>
             <div className="PopUp">
-               <div> name: <input type="text" name="name" placeholder={this.props.c.name} value={this.state.name} onInput={this.updateState} /> </div>
-               <div> country: <input type="text" name="country" placeholder={this.props.c.country} value={this.state.country} onInput={this.updateState} /></div>
+               <div> name: <input className="inp" type="text" name="name" placeholder={this.props.c.name} value={this.state.name} onChange={this.updateState} /> </div>
+               <div> country: <input className="inp" type="text" name="country" placeholder={this.props.c.country} value={this.state.country} onChange={this.updateState} /></div>
                <button className="inpB" onClick={this.transferVal}>update</button>
             </div>
          </div>)

@@ -7,8 +7,8 @@ class Clients extends Component {
    constructor() {
       super()
       this.state = {
-         // filterBy: "country",
-         // inputVal: "croatia",
+         filterBy: "name",
+         inputVal: "",
          show: false,
          client: {},
       }
@@ -19,7 +19,7 @@ class Clients extends Component {
       const value = target.value
       const key = target.name
       this.setState({
-        ...this.state, [key]: value
+         ...this.state, [key]: value
       })
    }
 
@@ -28,15 +28,19 @@ class Clients extends Component {
    }
 
    render() {
+      // console.log(this.state.filterBy || "12222")
+      // console.log(this.state.inputVal || "22222")
+      // console.log(this.props.clients || "32222")
+      // console.log(this.props.clients[0] || "42222")
+      // console.log(this.props.clients[0][name])
       console.log(this.state.filterBy)
-      console.log(this.state.inputVal)
       console.log(this.props.clients)
-      // console.log(this.props.clients[0][this.state.filterBy])
+
 
 
       return (
          <div className="Clients">
-            <Search c={this.props.clients} />
+            <Search c={this.props.clients} updateState={this.updateState} />
             <table className="Clients">
                <thead>
                   <tr className="Client" >
@@ -51,9 +55,10 @@ class Clients extends Component {
                </thead>
                {this.state.show ? <PopUp c={this.state.client} r={this.props.r} changeShow={this.changeShow} /> : null}
                <tbody>
-                  {this.props.clients.map((c, i) => <Client  changeShow={this.changeShow} c={c} key={i} />)}
-                  {/* {this.props.clients.map((c, i) => c[this.state.filterBy] === this.state.inputVal ? <Client changeShow={this.changeShow} c={c} key={i} /> : null)} */}
-
+                  {!this.state.filterBy ? this.props.clients.map((c, i) => <Client changeShow={this.changeShow} c={c} key={i} />)
+                     : this.props.clients.map((c, i) => c[this.state.filterBy].toLowerCase().includes(this.state.inputVal.toLowerCase()) ?
+                        <Client changeShow={this.changeShow} c={c} key={i} /> : null)}
+                  {/*regex:  this.state.inputVal.test(c[this.state.filterBy]) */}
                </tbody>
 
             </table>
