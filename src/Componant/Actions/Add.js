@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import moment from 'moment'
-// @ts-check3
-
 
 class Add extends Component {
-   constructor() {moment().format("MMM Do YY")
+   constructor() {
+      moment().format("MMM Do YY")
       super()
       this.state = {
          client: {
@@ -27,10 +26,10 @@ class Add extends Component {
    }
 
    addClient = async () => {
-      let newClient = {...this.state.client}
-      newClient.firstContact= new Date()
+      let newClient = { ...this.state.client }
+      newClient.firstContact = new Date()
       newClient.emailType = "-"
-      newClient.sold =false
+      newClient.sold = false
       await axios.post(`http://localhost:8989/client`, newClient)
       this.setState({
          client: {
@@ -39,9 +38,9 @@ class Add extends Component {
             owner: "",
             email: ""
          }
-      },function(){
+      }, function () {
          console.log(newClient)
-         this.props.r()
+         this.props.getAll()
       })
    }
 

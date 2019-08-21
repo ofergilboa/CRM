@@ -14,19 +14,19 @@ class App extends Component {
       this.state = { clients: [] }
    }
 
-
-   // addedAllClients = () => {
+   
+   componentDidMount = () => {
+      // this.addAllClients()
+      this.getAllClients()
+   }
+   
+   // a function that insert all of my clients into the DB, should run once
+   // addAllClients = () => {
    //    console.log(clients)
    //    clients.forEach(c => {
    //       axios.post(`http://localhost:8989/client`, c)
    //    })
    // }
-
-   componentDidMount = () => {
-      // this.addedAllClients()
-      this.getAllClients()
-   }
-
 
    getAllClients = async () => {
       let res = await axios.get(`http://localhost:8989/clients`)
@@ -45,8 +45,8 @@ class App extends Component {
                   </div>
                </header>
                <body className="App-body">
-                  <Route exact path="/clients" render={() => <Clients clients={this.state.clients} r={this.getAllClients} />} />
-                  <Route exact path="/actions" render={() => <Actions clients={this.state.clients} r={this.getAllClients} />} />
+                  <Route exact path="/clients" render={() => <Clients clients={this.state.clients} getAll={this.getAllClients} />} />
+                  <Route exact path="/actions" render={() => <Actions clients={this.state.clients} getAll={this.getAllClients} />} />
                   {/* <Route exact path="/analytics" component={Analytics}/> */}
                </body>
                <footer className="App-footer">

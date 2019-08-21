@@ -28,16 +28,6 @@ class Clients extends Component {
    }
 
    render() {
-      // console.log(this.state.filterBy || "12222")
-      // console.log(this.state.inputVal || "22222")
-      // console.log(this.props.clients || "32222")
-      // console.log(this.props.clients[0] || "42222")
-      // console.log(this.props.clients[0][name])
-      console.log(this.state.filterBy)
-      console.log(this.props.clients)
-
-
-
       return (
          <div className="Clients">
             <Search c={this.props.clients} updateState={this.updateState} />
@@ -53,14 +43,17 @@ class Clients extends Component {
                      <th className="ClientTH">first Contact</th>
                   </tr>
                </thead>
-               {this.state.show ? <PopUp c={this.state.client} r={this.props.r} changeShow={this.changeShow} /> : null}
+               {this.state.show
+                  ? <PopUp client={this.state.client} getAll={this.props.getAll} changeShow={this.changeShow} />
+                  : null}
                <tbody>
-                  {!this.state.filterBy ? this.props.clients.map((c, i) => <Client changeShow={this.changeShow} c={c} key={i} />)
-                     : this.props.clients.map((c, i) => c[this.state.filterBy].toLowerCase().includes(this.state.inputVal.toLowerCase()) ?
-                        <Client changeShow={this.changeShow} c={c} key={i} /> : null)}
-                  {/*regex:  this.state.inputVal.test(c[this.state.filterBy]) */}
+                  {!this.state.filterBy
+                     ? this.props.clients.map((c, i) => <Client changeShow={this.changeShow} client={c} key={i} />)
+                     : this.props.clients.map((c, i) =>
+                        c[this.state.filterBy].toLowerCase().includes(this.state.inputVal.toLowerCase())
+                           ? <Client changeShow={this.changeShow} client={c} key={i} />
+                           : null)}
                </tbody>
-
             </table>
          </div>)
    }
