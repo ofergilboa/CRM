@@ -16,17 +16,17 @@ class App extends Component {
 
    
    componentDidMount = () => {
-      // this.addAllClients()
+      this.addAllClients()
       this.getAllClients()
    }
    
    // a function that insert all of my clients into the DB, should run once
-   // addAllClients = () => {
-   //    console.log(clients)
-   //    clients.forEach(c => {
-   //       axios.post(`/client` || `http://localhost:8989/client`, c)
-   //    })
-   // }
+   addAllClients = () => {
+      console.log(clients)
+      clients.forEach(c => {
+         axios.post(`/client` || `http://localhost:8989/client`, c)
+      })
+   }
 
    getAllClients = async () => {
       let res = await axios.get(`/clients`||`http://localhost:8989/clients`)
