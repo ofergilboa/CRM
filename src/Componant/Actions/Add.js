@@ -30,7 +30,7 @@ class Add extends Component {
       newClient.firstContact = new Date()
       newClient.emailType = "-"
       newClient.sold = false
-      await axios.post(`http://localhost:8989/client`, newClient)
+      await axios.post(`/client` || `http://localhost:8989/client`, newClient)
       this.setState({
          client: {
             name: "",

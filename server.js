@@ -4,6 +4,7 @@ const api = require(`./server/routes/api`)
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 // const path = require('path')
+app.use(express.static(path.join(__dirname, 'build')));
 
 mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/CRM`, {useNewUrlParser: true})
 
@@ -26,6 +27,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(`/`, api)
 
 
+app.get('*', function (req, res) {
+   res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 const port = process.env.PORT || 8989
 app.listen(port, ()=>console.log('Server running on port '+ port))

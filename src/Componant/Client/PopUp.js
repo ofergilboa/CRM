@@ -24,8 +24,8 @@ class PopUp extends Component {
       this.props.changeShow()
       let clientC = { client: this.props.client.name, newV: this.state.country }
       let clientN = { client: this.props.client.name, newV: this.state.name }
-      if (this.state.country) { await axios.post(`http://localhost:8989/update/country`, clientC) }
-      if (this.state.name) { await axios.post(`http://localhost:8989/update/name`, clientN) }
+      if (this.state.country) { await axios.post(`/update/country`||`http://localhost:8989/update/country`, clientC) }
+      if (this.state.name) { await axios.post(`/update/name`||`http://localhost:8989/update/name`, clientN) }
       this.props.getAll()
    }
 

@@ -24,7 +24,7 @@ class Actions extends Component {
       // console.log("2")
       let clientVal = { client: this.state.client, newV: newVal.val }
       // console.log(clientVal)
-      await axios.post(`http://localhost:8989/update/${newVal.key}`, clientVal)
+      await axios.post(`/update/${newVal.key}` || `http://localhost:8989/update/${newVal.key}`, clientVal)
       this.props.getAll()
    }
 

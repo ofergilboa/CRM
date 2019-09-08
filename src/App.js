@@ -24,12 +24,12 @@ class App extends Component {
    // addAllClients = () => {
    //    console.log(clients)
    //    clients.forEach(c => {
-   //       axios.post(`http://localhost:8989/client`, c)
+   //       axios.post(`/client` || `http://localhost:8989/client`, c)
    //    })
    // }
 
    getAllClients = async () => {
-      let res = await axios.get(`http://localhost:8989/clients`)
+      let res = await axios.get(`/clients`||`http://localhost:8989/clients`)
       const clients = res.data
       this.setState({ clients })
    }

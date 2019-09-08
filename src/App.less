@@ -1,7 +1,10 @@
+
+// @import .Client from'./Componant/Client/Client.less';
 @color1: #2e3952;
 @color2: #e6e6ec;
 @color3: #c0d5fd;
 @color4: rgb(255, 255, 255);
+
 
 
 .App {
@@ -107,7 +110,7 @@
             text-align: left;
             :hover{
                background-color: @color4;
-               // color: aqua;
+               color: @color2;
             }            
             .ClientTD{
                height: 4.5vh;
@@ -147,18 +150,6 @@
             width: 40vw;
             min-width: 500px;
             background-color:@color4;
-            // grid-auto-columns: 3fr 1fr 2fr 1fr 2fr;
-            // grid-auto-rows: 1fr 1fr 1fr;
-            // grid-template-areas: "o1 . e2 . o3" "e1 . o2 . e3" "s1 . . . s2";
-            // .owner{
-            //    .o1{grid-area: o1 } .o2{grid-area: o2 } .o3{ grid-area: o3 };
-            // }
-            // .email{
-            //    .e1{grid-area: e1 } .e2{grid-area: e2 } .e3{ grid-area: e3 };
-            // }
-            // .sale{
-            //    .s1{grid-area: s1 } .s2{grid-area: s2 };
-            // }
          }
 
       }
@@ -167,16 +158,7 @@
       background-color: @color3;
    }
 }
- 
-//  tr{
-//    :hover{
-//     background-color: blue;
-//  }}
-
-
-
-
-
+   
 
  .App-link {
    color: #61dafb;
