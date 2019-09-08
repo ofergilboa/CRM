@@ -3,10 +3,10 @@ const app = express()
 const api = require(`./server/routes/api`)
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-// const path = require('path')
-app.use(express.static(path.join(__dirname, 'build')));
+const path = require('path')
 
 mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/CRM`, {useNewUrlParser: true})
+app.use(express.static(path.join(__dirname, 'build')));
 
 // ===== not secure ====== allowing  free acsses
 app.use(function (req, res, next) {
