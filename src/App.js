@@ -22,8 +22,8 @@ class App extends Component {
    
    // a function that insert all of my clients into the DB, should run once
    addAllClients = () => {
-      console.log(clients)
-      clients.forEach(c => {
+      console.log(Clients)
+      Clients.forEach(c => {
          axios.post(`/client` || `http://localhost:8989/client`, c)
       })
    }
