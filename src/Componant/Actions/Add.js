@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import moment from 'moment'
+let route = 'http://localhost:8989/' // for local
+// let route= '/'  //for heroku
 
 class Add extends Component {
    constructor() {
@@ -20,9 +22,10 @@ class Add extends Component {
       const target = event.target
       const value = target.value
       const key = target.name
+
       this.setState({
          client: { ...this.state.client, [key]: value }
-      })
+      }, function () { console.log(this.state.client) })
    }
 
    addClient = async () => {
@@ -30,7 +33,8 @@ class Add extends Component {
       newClient.firstContact = new Date()
       newClient.emailType = "-"
       newClient.sold = false
-      await axios.post(`/client` || `http://localhost:8989/client`, newClient)
+      console.log(newClient)
+      await axios.post(`${route}client`, newClient)
       this.setState({
          client: {
             name: "",
@@ -39,20 +43,22 @@ class Add extends Component {
             email: ""
          }
       }, function () {
+         console.log(1)
          console.log(newClient)
          this.props.getAll()
       })
    }
 
    render() {
+      let client = this.state.client
       return (
          <div>
             <div className="addClient">
                <div className="actionH">ADD CLIENT</div>
-               <div>Name: {<input className="addInput" name="name" value={this.state.client.name} onChange={this.updateState} />}</div>
-               <div>Country: {<input className="addInput" name="country" value={this.state.client.country} onChange={this.updateState} />}</div>
-               <div>Owner: {<input className="addInput" name="owner" value={this.state.client.owner} onChange={this.updateState} />}</div>
-               <div>Email: {<input className="addInput" name="email" value={this.state.client.email} onChange={this.updateState} />}</div>
+               <div>Name: {<input className="addInput" name="name" value={client.name} onChange={this.updateState} />}</div>
+               <div>Country: {<input className="addInput" name="country" value={client.country} onChange={this.updateState} />}</div>
+               <div>Owner: {<input className="addInput" name="owner" value={client.owner} onChange={this.updateState} />}</div>
+               <div>Email: {<input className="addInput" name="email" value={client.email} onChange={this.updateState} />}</div>
                <button onClick={this.addClient}>Add New Client</button>
             </div>
          </div>)

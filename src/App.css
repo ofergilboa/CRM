@@ -14,19 +14,25 @@
   justify-content: center;
   font-size: calc(20px);
   font-family: 'Courier New', Courier, monospace;
-  color: #ffffff;
+  color: #00ff00;
 }
 .App .App-header .Headers {
   background-color: #2e3952;
   display: flex;
   align-items: left;
-  margin-left: 15px;
+  padding-left: 15px;
 }
 .App .App-header .Headers .Header {
   margin-right: 25px;
   text-decoration-line: none;
-  color: #e6e6ec;
+  color: #688ad8;
   padding: 9px;
+}
+.App .Headers a.active {
+  color: #e6e6ec !important;
+}
+.App .App-header a:hover {
+  color: #ffffff !important;
 }
 .App .App-body {
   background-color: #e6e6ec;
@@ -37,7 +43,7 @@
 }
 .App .App-body .PopUp {
   font-family: 'Courier New', Courier, monospace;
-  margin-top: 10vh;
+  margin-top: 14vh;
   margin-left: 31vw;
   position: fixed;
   width: 30vw;
@@ -62,9 +68,17 @@
 }
 .App .App-body .PopUp .inpB {
   color: #2e3952;
-  margin: 20px 35px 6px;
+  margin: 20px 63px 6px ;
+  padding: 3px 55px 3px 55px;
   border-radius: 5px;
   background-color: #c0d5fd;
+}
+.App .App-body .PopUp .xButton {
+  color: #ffffff;
+  margin-left: -26px;
+  padding: 3px 8px 3px 8px;
+  border-radius: 5px;
+  background-color: #2e3952;
 }
 .App .App-body .Clients {
   margin-top: 2vh;
@@ -99,10 +113,6 @@
 .App .App-body .Clients .Client {
   background-color: #e6e6ec;
   text-align: left;
-}
-.App .App-body .Clients .Client :hover {
-  background-color: #ffffff;
-  color: #e6e6ec;
 }
 .App .App-body .Clients .Client .ClientTD {
   height: 4.5vh;
@@ -161,6 +171,7 @@
 .App .App-footer {
   background-color: #c0d5fd;
 }
-.App-link {
-  color: #61dafb;
+tr:hover td {
+  background-color: #ffffff;
+  color: #ffffff;
 }

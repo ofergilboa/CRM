@@ -4,6 +4,9 @@ import Update from './Update';
 import Add from './Add';
 import axios from 'axios'
 
+let route = `http://localhost:8989/` // for local
+// let route= `/` //for heroku
+
 class Actions extends Component {
    constructor() {
       super()
@@ -20,11 +23,8 @@ class Actions extends Component {
    }
 
    transferVal = async (newVal) => {
-      //put request to DB
-      // console.log("2")
       let clientVal = { client: this.state.client, newV: newVal.val }
-      // console.log(clientVal)
-      await axios.post(`/update/${newVal.key}` || `http://localhost:8989/update/${newVal.key}`, clientVal)
+      await axios.post(`${route}update/${newVal.key}`, clientVal)
       this.props.getAll()
    }
 

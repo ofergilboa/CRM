@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+let route = `http://localhost:8989/update/` // for local
+// let route= `update/` //for heroku
 
 class PopUp extends Component {
    constructor() {
@@ -24,21 +26,30 @@ class PopUp extends Component {
       this.props.changeShow()
       let clientC = { client: this.props.client.name, newV: this.state.country }
       let clientN = { client: this.props.client.name, newV: this.state.name }
-      if (this.state.country) { await axios.post(`/update/country`||`http://localhost:8989/update/country`, clientC) }
-      if (this.state.name) { await axios.post(`/update/name`||`http://localhost:8989/update/name`, clientN) }
+      if (this.state.country) { await axios.post(`${route}country`, clientC) }
+      if (this.state.name) { await axios.post(`${route}name`, clientN) }
       this.props.getAll()
    }
-
+   hide = async () => {
+      this.props.changeShow()
+   }
    render() {
       console.log(this.state.name)
       return (
          <div>
             <div className="PopUp">
-               <div> name: <input className="inp" type="text" name="name"
-                  placeholder={this.props.client.name} value={this.state.name} onChange={this.updateState} /> </div>
-               <div> country: <input className="inp" type="text" name="country"
-                  placeholder={this.props.client.country} value={this.state.country} onChange={this.updateState} /></div>
-               <button className="inpB" onClick={this.transferVal}>update</button>
+               <div>
+                  name : <input className="inp" type="text" name="name" placeholder={this.props.client.name}
+                     value={this.state.name} onChange={this.updateState} />
+               </div>
+               <div>
+                  country : <input className="inp" type="text" name="country" placeholder={this.props.client.country}
+                     value={this.state.country} onChange={this.updateState} />
+               </div>
+               <div>
+                  <button className="inpB" onClick={this.transferVal}>update</button>
+                  <button className="xButton" onClick={this.hide}>x</button>
+               </div>
             </div>
          </div>)
    }

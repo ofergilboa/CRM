@@ -6,7 +6,8 @@ import Headers from './Componant/Headers';
 import Clients from './Componant/Client/Clients';
 import Actions from './Componant/Actions/Actions';
 // import clients from './data'; //for loading clients to db
-
+let route = `http://localhost:8989/` // for local
+// let route= `/` //for heroku
 
 class App extends Component {
    constructor() {
@@ -14,28 +15,28 @@ class App extends Component {
       this.state = { clients: [] }
    }
 
-   
+
    componentDidMount = () => {
       // this.addAllClients()
       this.getAllClients()
    }
-   
-   // a function that insert all of my clients into the DB, should run once
+
+   //// a function that inserted all of my clients into the DB, should run once
    // addAllClients = () => {
    //    console.log(clients)
    //    clients.forEach(c => {
-   //       axios.post(`/client` || `http://localhost:8989/client`, c)
+   //       axios.post(`${route}clients`, c)
    //    })
    // }
 
    getAllClients = async () => {
-      let res = await axios.get(`/clients`||`http://localhost:8989/clients`)
+      let res = await axios.get(`${route}clients`)
       const clients = res.data
+      console.log(clients)
       this.setState({ clients })
    }
 
    render() {
-      console.log(this.state)
       return (
          <Router>
             <div className="App">
@@ -45,6 +46,7 @@ class App extends Component {
                   </div>
                </header>
                <body className="App-body">
+                  <Route exact path="/" render={() => <Clients clients={this.state.clients} getAll={this.getAllClients} />} />
                   <Route exact path="/clients" render={() => <Clients clients={this.state.clients} getAll={this.getAllClients} />} />
                   <Route exact path="/actions" render={() => <Actions clients={this.state.clients} getAll={this.getAllClients} />} />
                   {/* <Route exact path="/analytics" component={Analytics}/> */}

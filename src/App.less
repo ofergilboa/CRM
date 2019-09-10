@@ -1,19 +1,20 @@
-
-// @import .Client from'./Componant/Client/Client.less';
-@color1: #2e3952;
-@color2: #e6e6ec;
-@color3: #c0d5fd;
-@color4: rgb(255, 255, 255);
-
-
+@darkBlue: #2e3952;
+@lightGrey: #e6e6ec;
+@lightBlue: #c0d5fd;
+@white: rgb(255, 255, 255);
+@lighterDarkBlue: #688ad8;
+@x: #5c0505;
+@red: rgb(255, 0, 0);
+@green: rgb(0, 255, 0);
+@blue: rgb(0, 38, 255);
 
 .App {
    text-align: center;
-   background-color: @color2;
+   background-color: @lightGrey;
    .App-header{
       width: 100vw;
       box-shadow: 0px 0px 10px 0px black;
-      background-color: @color1;
+      background-color: @darkBlue;
       height: 7.5vh;
       display: flex;
       position: fixed;
@@ -22,56 +23,70 @@
       justify-content: center;
       font-size: calc(18px + 2vmin);
       font-family: 'Courier New', Courier, monospace;
-      color: @color4;
+      color: @green;
       .Headers{
-         background-color: @color1;
+         background-color: @darkBlue;
          display: flex;
          align-items: left;
-         margin-left: 15px;
+         padding-left: 15px;
          .Header{
-            // box-shadow: 0px 0px 0px 0.1px rgb(255, 255, 255);
             margin-right: 25px;
             text-decoration-line: none;
-            color: @color2; 
+            color: @lighterDarkBlue; 
             padding: 9px;
          }
       }
    }
+   .Headers a.active{
+      color: @lightGrey !important;
+   }
+   .App-header a:hover{
+      color: @white !important;
+   }
+
    .App-body{
-      background-color: @color2;
+      background-color: @lightGrey;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       display: grid;
       align-items: center;
       justify-content: center;
       .PopUp{
          font-family: 'Courier New', Courier, monospace;
-         margin-top: 10vh;
+         margin-top: 14vh;
          margin-left: 31vw;
          position: fixed;
          width: 30vw;
          height : 25vh;
-         background-color: @color1;
+         background-color: @darkBlue;
          display: grid;
          align-items: center;
          justify-content: center;
-         color: @color2;
+         color: @lightGrey;
          border-radius: 15px;
          box-shadow: 5px 8px 25px 1px black;
          .inp{
-            background-color: @color2;
-            color: @color1;
+            background-color: @lightGrey;
+            color: @darkBlue;
             border-radius: 5px;
-            box-shadow: inset 1px 1px 4px @color1;
+            box-shadow: inset 1px 1px 4px @darkBlue;
             margin-left:13px; 
             margin-top:8px; 
             padding: 3px 0px 2px 6px;
             left: 0px;
          }
          .inpB{
-            color: @color1;
-            margin: 20px 35px 6px;
+            color: @darkBlue;
+            margin: 20px 63px 6px ;
+            padding: 3px 55px 3px 55px;
             border-radius: 5px;
-            background-color: @color3;
+            background-color: @lightBlue;
+         }
+         .xButton{
+            color: @white;
+            margin-left: -26px;
+            padding: 3px 8px 3px 8px;
+            border-radius: 5px;
+            background-color: @darkBlue;
          }
       }
       .Clients{
@@ -80,18 +95,18 @@
                margin-top:9vh; 
                margin-right:25px; 
                margin-left:13px; 
-               background-color: @color4;
-               color: @color1;
+               background-color: @white;
+               color: @darkBlue;
                border-radius: 5px;
-               box-shadow: inset 1px 1px 4px @color1;
+               box-shadow: inset 1px 1px 4px @darkBlue;
                padding: 3px 18px ;
             }
             .button {
-               background-color: fade(@color3, 20%);
+               background-color: fade(@lightBlue, 20%);
                border-radius: 5px;
                border: none;
-               box-shadow: 1px 2px 4px @color1;
-               color: @color1;
+               box-shadow: 1px 2px 4px @darkBlue;
+               color: @darkBlue;
                padding: 1px 12px 1px 10px;
                margin-right: 10px;
                text-align: center;
@@ -102,23 +117,20 @@
          }
          margin-top: 2vh;
          width: 92vw;
-         background-color: @color2;
+         background-color: @lightGrey;
          text-align: left;
          border-collapse: collapse;
+            
          .Client{
-            background-color: @color2;
+            background-color: @lightGrey;
             text-align: left;
-            :hover{
-               background-color: @color4;
-               color: @color2;
-            }            
             .ClientTD{
                height: 4.5vh;
                border-bottom: 1px solid rgba(255, 255, 255, 0.4);
                padding: 3px;
                padding-left: 15px;
                padding-right: 25px;
-               color: @color1;
+               color: @darkBlue;
             }
             .ClientTD2{
                .ClientTD();
@@ -130,7 +142,7 @@
                .ClientTD();
                // border-bottom: 1px solid rgba(255, 255, 255, 0.6);
                border-top: 1px solid rgba(255, 255, 255, 0.4);
-               background-color: fade(@color3, 20%);
+               background-color: fade(@lightBlue, 20%);
             }
             .ClientTH2{
                .ClientTH();
@@ -149,20 +161,17 @@
             display: grid;
             width: 40vw;
             min-width: 500px;
-            background-color:@color4;
+            background-color:@white;
          }
-
       }
    }
    .App-footer{
-      background-color: @color3;
+      background-color: @lightBlue;
    }
 }
-   
 
- .App-link {
-   color: #61dafb;
- }
- 
+ tr:hover td{
+   background-color: @white;
+   color: @white;
+}
 
- 
