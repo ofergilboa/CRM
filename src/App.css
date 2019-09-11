@@ -16,7 +16,15 @@
    font-family: 'Courier New', Courier, monospace;
    color: #00ff00;
  }
- .App .App-header .Headers {
+ .App .App-body {
+   height: 100vh;
+   background-color: #e6e6ec;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+ }
+ /* .App .App-header .Headers {
    background-color: #2e3952;
    display: flex;
    align-items: left;
@@ -34,13 +42,7 @@
  .App .App-header a:hover {
    color: #ffffff !important;
  }
- .App .App-body {
-   background-color: #e6e6ec;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   display: grid;
-   align-items: center;
-   justify-content: center;
- }
+
  .App .App-body .PopUp {
    font-family: 'Courier New', Courier, monospace;
    margin-top: 14vh;
@@ -163,4 +165,4 @@
    background-color: #ffffff;
    color: #ffffff;
  }
- 
+  */

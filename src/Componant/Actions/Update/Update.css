@@ -1,0 +1,31 @@
+.button {
+  color: #2e3952;
+  margin: 2px 0px 6px ;
+  padding: 2px 12px 1px 12px;
+  border-radius: 5px;
+  background-color: #c0d5fd;
+  left: 0px;
+}
+.select {
+  background-color: #e6e6ec;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 2px 4px #2e3952;
+  color: #2e3952;
+  padding: 1px 12px 1px 10px;
+  margin-right: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.inpS {
+  margin-top: 2vh;
+  margin-right: 25px;
+  margin-left: 13px;
+  background-color: #ffffff;
+  color: #2e3952;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 4px #2e3952;
+  padding: 3px 18px ;
+}

@@ -1,7 +1,7 @@
 ## Customer Relationship Management
 
-- A web app for tracking and modifying multiple clients information. 
-- 
+A web app for tracking and modifying multiple clients information. 
+
 ### Built With:
 - React
 - Node.JS

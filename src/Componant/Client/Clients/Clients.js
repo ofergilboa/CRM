@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Client from '../Client/Client';
 import PopUp from '../PopUp/PopUp';
 import Search from '../Search/Search';
+import './Clients.css'
 
 class Clients extends Component {
    constructor() {

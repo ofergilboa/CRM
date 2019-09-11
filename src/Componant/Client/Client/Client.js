@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import moment from 'moment'
+import './Client.css'
 
 class Client extends Component {
 

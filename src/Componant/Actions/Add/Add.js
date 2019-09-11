@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import moment from 'moment'
+import './Add.css'
 let route = 'http://localhost:8989/' // for local
+
 // let route= '/'  //for heroku
 
 class Add extends Component {
@@ -54,12 +56,13 @@ class Add extends Component {
       return (
          <div>
             <div className="addClient">
-               <div className="actionH">ADD CLIENT</div>
-               <div>Name: {<input className="addInput" name="name" value={client.name} onChange={this.updateState} />}</div>
-               <div>Country: {<input className="addInput" name="country" value={client.country} onChange={this.updateState} />}</div>
-               <div>Owner: {<input className="addInput" name="owner" value={client.owner} onChange={this.updateState} />}</div>
-               <div>Email: {<input className="addInput" name="email" value={client.email} onChange={this.updateState} />}</div>
-               <button onClick={this.addClient}>Add New Client</button>
+               <div className="actionH ">ADD CLIENT</div>
+               <div>Name: {<input className="inpS" name="name" value={client.name} onChange={this.updateState} />}</div>
+               <div>Country: {<input className="inpS" name="country" value={client.country} onChange={this.updateState} />}</div>
+               <div>Owner: {<input className="inpS" name="owner" value={client.owner} onChange={this.updateState} />}</div>
+               <div>Email: {<input className="inpS" name="email" value={client.email} onChange={this.updateState} />}</div>
+               <br/>
+               <button className="button" onClick={this.addClient}>Add New Client</button>
             </div>
          </div>)
    }

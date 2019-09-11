@@ -1,0 +1,16 @@
+.Actions {
+  padding: 15px 20px 10px 20px;
+  background-color: #ff0000;
+  margin-top: 18vh;
+  margin-left: 27vw;
+  position: fixed;
+  width: 42vw;
+  min-width: 500px;
+  background-color: #2e3952;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: #e6e6ec;
+  border-radius: 35px;
+  box-shadow: 0px 0px 15px 1px black;
+}

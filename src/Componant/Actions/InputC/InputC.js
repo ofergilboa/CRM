@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import './InputC.css'
+
 
 class InputC extends Component {
    constructor() {
@@ -25,16 +27,14 @@ class InputC extends Component {
 
    render() {
       return (
-         <div className="InputC">
+         <div className="">
             <div> UPDATE </div>
-
-            <div>Client:
-               <input list="clients" name="client" className="addInput" value={this.state.client} onInput={this.updateState} />
+            <div> Client: <input list="clients" name="client" className="inpS"
+               value={this.state.client} onInput={this.updateState} />
                <datalist id="clients">
                   {this.props.clients.map(c => <option value={c.name} ></option>)}
                </datalist>
             </div>
-
          </div >)
    }
 }
