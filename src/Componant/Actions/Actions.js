@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import InputC from './InputC';
-import Update from './Update';
-import Add from './Add';
+import InputC from './InputC/InputC';
+import Update from './Update/Update';
+import Add from './Add/Add';
 import axios from 'axios'
 
 let route = `http://localhost:8989/` // for local

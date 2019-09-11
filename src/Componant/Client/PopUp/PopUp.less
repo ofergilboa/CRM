@@ -1,0 +1,49 @@
+@darkBlue: #2e3952;
+@lightGrey: #e6e6ec;
+@lightBlue: #c0d5fd;
+@white: rgb(255, 255, 255);
+@lighterDarkBlue: #688ad8;
+@x: #5c0505;
+@red: rgb(255, 0, 0);
+@green: rgb(0, 255, 0);
+@blue: rgb(0, 38, 255);
+
+.PopUp{
+   font-family: 'Courier New', Courier, monospace;
+   margin-top: 14vh;
+   margin-left: 31vw;
+   position: fixed;
+   width: 30vw;
+   height : 25vh;
+   background-color: @darkBlue;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   color: @lightGrey;
+   border-radius: 15px;
+   box-shadow: 5px 8px 25px 1px black;
+   .inp{
+      background-color: @lightGrey;
+      color: @darkBlue;
+      border-radius: 5px;
+      box-shadow: inset 1px 1px 4px @darkBlue;
+      margin-left:13px; 
+      margin-top:8px; 
+      padding: 3px 0px 2px 6px;
+      left: 0px;
+   }
+   .inpB{
+      color: @darkBlue;
+      margin: 20px 63px 6px ;
+      padding: 3px 55px 3px 55px;
+      border-radius: 5px;
+      background-color: @lightBlue;
+   }
+   .xButton{
+      color: @white;
+      margin-left: -26px;
+      padding: 3px 8px 3px 8px;
+      border-radius: 5px;
+      background-color: @darkBlue;
+   }
+}

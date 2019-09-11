@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Client from './Client';
-import PopUp from './PopUp';
-import Search from './Search';
+import Client from '../Client/Client';
+import PopUp from '../PopUp/PopUp';
+import Search from '../Search/Search';
 
 class Clients extends Component {
    constructor() {

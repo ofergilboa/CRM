@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import Headers from './Componant/Headers';
-import Clients from './Componant/Client/Clients';
+import Headers from './Componant/Headers/Headers';
+import Clients from './Componant/Client/Clients/Clients';
 import Actions from './Componant/Actions/Actions';
 // import clients from './data'; //for loading clients to db
 let route = `http://localhost:8989/` // for local
@@ -41,7 +41,7 @@ class App extends Component {
          <Router>
             <div className="App">
                <header className="App-header">
-                  <div className="Headers">
+                  <div>
                      <Headers />
                   </div>
                </header>

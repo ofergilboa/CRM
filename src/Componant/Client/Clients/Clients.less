@@ -1,0 +1,52 @@
+@darkBlue: #2e3952;
+@lightGrey: #e6e6ec;
+@lightBlue: #c0d5fd;
+@white: rgb(255, 255, 255);
+@lighterDarkBlue: #688ad8;
+@x: #5c0505;
+@red: rgb(255, 0, 0);
+@green: rgb(0, 255, 0);
+@blue: rgb(0, 38, 255);
+
+.Clients{
+   margin-top: 2vh;
+   width: 92vw;
+   background-color: @lightGrey;
+   text-align: left;
+   border-collapse: collapse;
+      
+   .Client{
+      background-color: @lightGrey;
+      text-align: left;
+      .ClientTD{
+         height: 4.5vh;
+         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+         padding: 3px;
+         padding-left: 15px;
+         padding-right: 25px;
+         color: @darkBlue;
+      }
+      .ClientTD2{
+         .ClientTD();
+         text-align: center;
+         padding-left: 5px;
+         padding-right: 5px;
+      }
+      .ClientTH{
+         .ClientTD();
+         // border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+         border-top: 1px solid rgba(255, 255, 255, 0.4);
+         background-color: fade(@lightBlue, 20%);
+      }
+      .ClientTH2{
+         .ClientTH();
+         text-align: center;
+         padding-left: 5px;
+         padding-right: 5px;
+      }
+   }
+}
+tr:hover td{
+   background-color: @white;
+   color: @white;
+}
