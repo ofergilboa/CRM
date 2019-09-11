@@ -1,11 +1,23 @@
 ## Customer Relationship Management
 
-a web app for tracking and modifying multiple clients information. 
-Client side is using React, server side is using Node.JS, Express and MongoDB.
- 
-![alt text](src/img/CRMclients.PNG "Home Page screenshot")
+- A web app for tracking and modifying multiple clients information. 
+- 
+### Built With:
+- React
+- Node.JS
+- Express
+- MongoDB
 
-src/img/CRMclients.PNG
+### features:
+
+- Filter clients by name/owner/country
+- Double tap client to update
+- Add client
+- Update client
+
+ 
+#### clients page
+![alt text](src/img/CRMclients.PNG "Home Page screenshot")
 
 
  https://crm-ofer-gilboa.herokuapp.com/
