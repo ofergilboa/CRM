@@ -2,6 +2,22 @@
 
 A web app for tracking and modifying multiple clients information. 
 
+
+#### clients page
+![alt text](src/img/Clients.PNG "Home Page screenshot")
+
+#### filtered by country
+![alt text](src/img/ClientsByCountry.PNG "Home Page screenshot")
+
+#### double click a client
+![alt text](src/img/CRMclients.PNG "Home Page screenshot")
+
+#### update or add a client
+![alt text](src/img/Actions.PNG "Home Page screenshot")
+
+#### dynamically updates 
+![alt text](src/img/Analytics.PNG "Home Page screenshot")
+
 ### Built With:
 - React
 - Node.JS
@@ -15,17 +31,6 @@ A web app for tracking and modifying multiple clients information.
 - Add client
 - Update client
 
- 
-#### clients page
-![alt text](src/img/CRMclients.PNG "Home Page screenshot")
-![alt text](src/img/Analytics.PNG "Home Page screenshot")
-![alt text](src/img/Actions.PNG "Home Page screenshot")
-![alt text](src/img/Clients.PNG "Home Page screenshot")
-![alt text](src/img/ClientsByCountry.PNG "Home Page screenshot")
-![alt text](src/img/Video "Home Page screenshot")
-
-
-
-
+#### ceck it out for yourself 
  https://crm-ofer-gilboa.herokuapp.com/
 
