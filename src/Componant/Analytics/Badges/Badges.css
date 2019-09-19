@@ -1,0 +1,22 @@
+.allBadges {
+  background-color: #e6e6ec;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: #e6e6ec;
+  margin-top: -5vmax;
+  display: inline-block;
+}
+.Badges {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px 30px 15px 30px;
+  background-color: #2e3952;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e6e6ec;
+  margin: 1vmax;
+  margin-top: 3vmax;
+  border-radius: 15px;
+  box-shadow: 5px 8px 25px 1px black;
+}

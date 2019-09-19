@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import '../Client/Client.css'
-let route = `http://localhost:8989/update/` // for local
-// let route= `update/` //for heroku
+// let route = `http://localhost:8989/update/` // for local
+let route= `update/` //for heroku
 
 class PopUp extends Component {
    constructor() {

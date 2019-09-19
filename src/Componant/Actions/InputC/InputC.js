@@ -27,8 +27,8 @@ class InputC extends Component {
 
    render() {
       return (
-         <div className="">
-            <div> UPDATE </div>
+         <div >
+            <div> UPDATE CLIENT</div>
             <div> Client: <input list="clients" name="client" className="inpS"
                value={this.state.client} onInput={this.updateState} />
                <datalist id="clients">
