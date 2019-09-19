@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import moment from 'moment'
 import './Add.css'
-let route = 'http://localhost:8989/' // for local
-// let route= '/'  //for heroku
+// let route = 'http://localhost:8989/' // for local
+let route= '/'  //for heroku
 
 class Add extends Component {
    constructor() {
