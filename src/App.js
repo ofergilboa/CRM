@@ -6,9 +6,9 @@ import Headers from './Componant/Headers/Headers';
 import Clients from './Componant/Client/Clients/Clients';
 import Actions from './Componant/Actions/Actions';
 import Analytics from './Componant/Analytics/Analytics';
-// import clients from './data'; //for loading clients to db
-let route = `http://localhost:8989/` // for local
-// let route= `/` //for heroku
+import clients from './data'; //for loading clients to db
+// let route = `http://localhost:8989/` // for local
+let route= `/` //for heroku
 // packaje.json: "start": "node server.js", //for heroku
 // packaje.json: "start": "react-scripts start", //for local
 
@@ -21,17 +21,17 @@ class App extends Component {
 
 
    componentDidMount = () => {
-      // this.addAllClients()
+      this.addAllClients()
       this.getAllClients()
    }
 
-   //// a function that inserted all of my clients into the DB, should run once
-   // addAllClients = () => {
-   //    console.log(clients)
-   //    clients.forEach(c => {
-   //       axios.post(`${route}clients`, c)
-   //    })
-   // }
+   // a function that inserted all of my clients into the DB, should run once
+   addAllClients = () => {
+      console.log(clients)
+      clients.forEach(c => {
+         axios.post(`${route}clients`, c)
+      })
+   }
 
    getAllClients = async () => {
       let res = await axios.get(`${route}clients`)
