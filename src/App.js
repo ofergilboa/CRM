@@ -6,6 +6,7 @@ import Headers from './Componant/Headers/Headers';
 import Clients from './Componant/Client/Clients/Clients';
 import Actions from './Componant/Actions/Actions';
 import Analytics from './Componant/Analytics/Analytics';
+import Home from './Componant/Home/Home';
 // import clients from './data'; //for loading clients to db
 let route = `http://localhost:8989/` // for local
 // let route = `/` //for heroku
@@ -50,7 +51,7 @@ class App extends Component {
                   </div>
                </header>
                <body className="App-body">
-                  <Route exact path="/" render={() => <Clients clients={this.state.clients} getAll={this.getAllClients} />} />
+                  <Route exact path="/home" render={() => <Home/>} />
                   <Route exact path="/clients" render={() => <Clients clients={this.state.clients} getAll={this.getAllClients} />} />
                   <Route exact path="/actions" render={() => <Actions clients={this.state.clients} getAll={this.getAllClients} />} />
                   <Route exact path="/analytics" render={() => <Analytics clients={this.state.clients} />} />
