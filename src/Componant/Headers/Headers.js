@@ -6,7 +6,7 @@ class Headers extends Component {
    render() {
       return (
          <div className="Headers">
-            <NavLink to="/home" className="Header"> Home </NavLink>
+            <NavLink to="/home"  className="Header"> Home </NavLink>
             <NavLink to="/clients" className="Header"> Clients </NavLink>
             <NavLink to="/actions" className="Header"> Actions </NavLink>
             <NavLink to="/analytics" className="Header" > Analytics </NavLink>

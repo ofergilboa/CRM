@@ -1,7 +1,6 @@
 .App-header {
   width: 100vw;
-  box-shadow: 0px 0px 10px 0px black;
-  background-color: #2e3952;
+  background-color: #2e2e2e;
   height: 7.5vh;
   display: flex;
   position: fixed;
@@ -10,10 +9,9 @@
   justify-content: center;
   font-size: calc(18px + 2vmin);
   font-family: 'Courier New', Courier, monospace;
-  color: #00ff00;
 }
 .Headers {
-  background-color: #2e3952;
+  background-color: #2e2e2e;
   display: flex;
   align-items: left;
   padding-left: 30px;
@@ -25,7 +23,7 @@
   padding: 9px;
 }
 .Headers a.active {
-  color: #e6e6ec !important;
+  color: #f1f1f1 !important;
 }
 .App-header a:hover {
   color: #ffffff !important;

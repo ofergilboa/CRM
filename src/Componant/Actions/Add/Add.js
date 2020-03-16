@@ -56,11 +56,12 @@ class Add extends Component {
          <div>
             <div >
                <div >ADD CLIENT</div>
+               <br />
                <div>Name: {<input className="inpS" name="name" value={client.name} onChange={this.updateState} />}</div>
                <div>Country: {<input className="inpS" name="country" value={client.country} onChange={this.updateState} />}</div>
                <div>Owner: {<input className="inpS" name="owner" value={client.owner} onChange={this.updateState} />}</div>
                <div>Email: {<input className="inpS" name="email" value={client.email} onChange={this.updateState} />}</div>
-               <br/>
+               <br />
                <button className="button" onClick={this.addClient}>Add New Client</button>
             </div>
          </div>)

@@ -51,6 +51,7 @@ class App extends Component {
                   </div>
                </header>
                <body className="App-body">
+                  <Route exact path="/" render={() => <Home/>} />
                   <Route exact path="/home" render={() => <Home/>} />
                   <Route exact path="/clients" render={() => <Clients clients={this.state.clients} getAll={this.getAllClients} />} />
                   <Route exact path="/actions" render={() => <Actions clients={this.state.clients} getAll={this.getAllClients} />} />

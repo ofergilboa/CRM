@@ -29,6 +29,7 @@ class InputC extends Component {
       return (
          <div >
             <div> UPDATE CLIENT</div>
+            <br/>
             <div> Client: <input list="clients" name="client" className="inpS"
                value={this.state.client} onInput={this.updateState} />
                <datalist id="clients">

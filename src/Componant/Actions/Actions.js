@@ -37,6 +37,8 @@ class Actions extends Component {
             <br />
             <Update clients={this.props.clients} getAll={this.props.getAll} transferVal={this.transferVal} />
             <br />
+            <br/>
+
             <Add getAll={this.props.getAll} />
          </div>)
    }
