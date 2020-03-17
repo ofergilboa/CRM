@@ -31,7 +31,7 @@ class Search extends Component {
                   <option value="name">name</option>
                   <option value="owner">owner</option>
                   <option value="country">country</option>
-                  <option value="sold">sold</option>
+                  {/* <option value="sold">sold</option> */}
                </select>
             </div>
          </div>)

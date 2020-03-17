@@ -28,13 +28,15 @@ class InputC extends Component {
    render() {
       return (
          <div >
-            <div> UPDATE CLIENT</div>
-            <br/>
-            <div> Client: <input list="clients" name="client" className="inpS"
-               value={this.state.client} onInput={this.updateState} />
+            {/* <div> UPDATE CLIENT</div> */}
+            {/* <br /> */}
+            <div> Client <div>
+               <input list="clients" name="client" className="inpS"
+                  value={this.state.client} onInput={this.updateState} />
                <datalist id="clients">
                   {this.props.clients.map(c => <option value={c.name} ></option>)}
                </datalist>
+            </div>
             </div>
          </div >)
    }

@@ -1,42 +1,48 @@
-@darkBlue: rgb(46, 46, 46);
-@lightGrey: rgb(241, 241, 241);
-@lightBlue: #c0d5fd;
-@white: rgb(255, 255, 255);
+@darkBlue       : rgb(46, 46, 46);
+@lightGrey      : rgb(241, 241, 241);
+@lightBlue      : #c0d5fd;
+@white          : rgb(255, 255, 255);
 @lighterDarkBlue: #688ad8;
-@x: #5c0505;
-@red: rgb(255, 0, 0);
-@green: rgb(0, 255, 0);
-@blue: rgb(0, 38, 255);
+@x              : #5c0505;
+@red            : rgb(255, 0, 0);
+@green          : rgb(0, 255, 0);
+@blue           : rgb(0, 38, 255);
 
-.App-header{
-   width: 100vw;
-   // box-shadow: @darkBlue;
-   background-color: @darkBlue;
-   height: 7.5vh;
-   display: flex;
-   position: fixed;
-   flex-direction: column;
-   align-items: left;
-   justify-content: center;
-   font-size: calc(18px + 2vmin);
-   font-family: 'Courier New', Courier, monospace;
-   // color: @green;
-}
-   .Headers{
-      background-color: @darkBlue;
-      display: flex;
-      align-items: left;
-      padding-left: 30px;
-      .Header{
-         margin-right: 25px;
-         text-decoration-line: none;
-         color: @lighterDarkBlue; 
-         padding: 9px;
-      }
+// .App-header {
+   // box-shadow      : @darkBlue;
+   // background-color: @darkBlue;
+   // background-color: red;
+   // height          : 17.5vh;
+   // display         : flex;
+   // position        : fixed;
+   // flex-direction  : column;
+   // align-items     : left;
+   // justify-content : center;
+   // font-size       : calc(18px + 2vmin);
+   // font-family        : 'Courier New', Courier, monospace;
+// }
+
+.Headers {
+   width           : 100vw;
+   // background-color   : @darkBlue;
+   display            : flex;
+   align-items        : left;
+   padding-left       : 30px;
+
+   .Header {
+      margin-right        : 25px;
+      text-decoration-line: none;
+      color               : @lighterDarkBlue;
+      padding             : 9px;
    }
-.Headers a.active{
-   color: @lightGrey !important;
 }
-.App-header a:hover{
-   color: @white !important;
+
+.Headers a.active {
+   color: @darkBlue  !important;
+   background-color: #fff;
+}
+
+.App-header a:hover {
+   // color           : @lightBlue  !important;
+   background-color: #fff;
 }

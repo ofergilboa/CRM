@@ -1,18 +1,16 @@
 .button {
-  color: #2e3952;
+  color: #e6e6ec;
   margin: 2px 0px 6px ;
-  padding: 2px 12px 1px 12px;
-  border-radius: 5px;
-  background-color: #c0d5fd;
+  padding: 3px 12px 2px 12px;
+  background-color: #2e2e2e;
   left: 0px;
+  font-size: 12px;
 }
 .inpS {
-  margin-top: 1vh;
-  margin-right: 25px;
-  margin-left: 13px;
-  background-color: #ffffff;
-  color: #2e3952;
-  border-radius: 5px;
-  box-shadow: inset 1px 1px 4px #2e3952;
-  padding: 3px 18px ;
+  border-radius: 0px;
+  box-shadow: none;
+  width: 100%;
+  padding: 4px 20px;
+  margin: 2px 10px 5px 0px;
+  box-sizing: border-box;
 }
