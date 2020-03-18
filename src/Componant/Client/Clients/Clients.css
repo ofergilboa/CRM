@@ -11,49 +11,51 @@
 }
 .Clients .Client .ClientTD {
   height: 4.5vh;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid #c7d0e4;
   padding: 3px;
-  padding-left: 15px;
+  padding-left: 25px;
   padding-right: 25px;
   color: #2e2e2e;
+  font-size: 13px;
 }
 .Clients .Client .ClientTD2 {
   height: 4.5vh;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid #c7d0e4;
   padding: 3px;
-  padding-left: 15px;
+  padding-left: 25px;
   padding-right: 25px;
   color: #2e2e2e;
+  font-size: 13px;
   text-align: center;
   padding-left: 5px;
   padding-right: 5px;
 }
 .Clients .Client .ClientTH {
   height: 4.5vh;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid #c7d0e4;
   padding: 3px;
-  padding-left: 15px;
+  padding-left: 25px;
   padding-right: 25px;
   color: #2e2e2e;
+  border-bottom: 3px solid #ffffff;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   background-color: #f1f1f1;
   font-size: 13px;
-  font-weight: 600;
 }
 .Clients .Client .ClientTH2 {
   height: 4.5vh;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid #c7d0e4;
   padding: 3px;
-  padding-left: 15px;
+  padding-left: 25px;
   padding-right: 25px;
   color: #2e2e2e;
+  border-bottom: 3px solid #ffffff;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   background-color: #f1f1f1;
   font-size: 13px;
-  font-weight: 600;
   text-align: center;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 tr:hover td {
   background-color: #ffffff;
@@ -65,36 +67,46 @@ tr:hover td {
   margin-left: 31vw;
   position: fixed;
   width: 30vw;
-  height: 25vh;
+  height: 35vh;
+  background-color: #e0e0e0;
   background-color: #2e2e2e;
   display: grid;
   align-items: center;
   justify-content: center;
   color: #f7f7f7;
   border-radius: 15px;
-  box-shadow: 5px 8px 25px 1px black;
+  box-shadow: 1px 1px 6px 10px white;
 }
 .PopUp .inp {
-  background-color: #f7f7f7;
-  color: #2e2e2e;
-  border-radius: 5px;
-  box-shadow: inset 1px 1px 4px #2e2e2e;
-  margin-left: 13px;
-  margin-top: 8px;
-  padding: 3px 0px 2px 6px;
-  left: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  padding: 4px 20px;
+  margin: 5px 10px 5px 0px;
+  border-radius: 0px;
+  padding: 4px 10px;
+  box-sizing: border-box;
 }
 .PopUp .inpB {
+  font-family: 'Courier New', Courier, monospace;
   color: #2e2e2e;
-  margin: 20px 63px 6px ;
+  margin: 10px 5px 6px 0px;
   padding: 3px 55px 3px 55px;
-  border-radius: 5px;
-  background-color: #c0d5fd;
+  width: 85%;
+  color: #f7f7f7;
+  border-radius: 0px;
+  background-color: #2e2e2e;
+  left: 0px;
+  font-size: 14px;
+  border: none;
+  box-shadow: 0px 0px 2px 0px white;
 }
 .PopUp .xButton {
+  border: none;
+  box-shadow: 0px 0px 2px 0px white;
+  font-family: 'Courier New', Courier, monospace;
   color: #ffffff;
-  margin-left: -26px;
+  margin-left: 6px;
   padding: 3px 8px 3px 8px;
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: #2e2e2e;
 }

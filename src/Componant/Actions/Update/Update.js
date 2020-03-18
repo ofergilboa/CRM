@@ -48,24 +48,27 @@ class Update extends Component {
          <div className="Update">
             <div className="owner">
                <div list="owners" placeholder="Owner" >Transfer Ownership To </div>
-               <select className="select" placeholder="Owner" name="owner" value={this.state.owner} onChange={this.updateState} >
-                  {[...owners].map(c => <option value={c}>{c} </option>)}
-               </select> <button className="button" onClick={this.transferOwner}>TRANSFER</button>
+               <div className="owner2">
+                  <select className="select" placeholder="Owner" name="owner" value={this.state.owner} onChange={this.updateState} >
+                     {[...owners].map(c => <option value={c}>{c} </option>)}
+                  </select> <button className="button" onClick={this.transferOwner}>TRANSFER</button>
+               </div>
             </div>
-
-            <span className="email" value={this.state.email} onChange={this.updateState}>
-               <div>Send Email </div>
-               <select className="select" name="email">
-                  <option value="A">A</option>
-                  <option value="B">B</option>
-                  <option value="C">C</option>
-                  <option value="D">D</option>
-               </select> <button className="button" onClick={this.transferMail}>SEND</button>
-            </span>
-
-            <span className="sale" value={this.state.sale} onChange={this.updateState}>
-               <div>Declare sale!  </div><button className="button" name="sale" onClick={this.updateState} >DECLARE</button>
-            </span>
+            <br />
+            <div className="sendDeclare" >
+               <span className="email" value={this.state.email} onChange={this.updateState}>
+                  <div>Send Email </div>
+                  <select className="select" name="email">
+                     <option value="A">A</option>
+                     <option value="B">B</option>
+                     <option value="C">C</option>
+                     <option value="D">D</option>
+                  </select> <button className="button buttonSend" onClick={this.transferMail}>SEND</button>
+               </span>
+               <span className="sale" value={this.state.sale} onChange={this.updateState}>
+                  <div>Declare sale</div><button className="button" name="sale" onClick={this.updateState} >DECLARE</button>
+               </span>
+            </div>
 
          </div >)
    }

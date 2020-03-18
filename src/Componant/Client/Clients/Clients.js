@@ -38,7 +38,7 @@ class Clients extends Component {
                      <th className="ClientTH">name</th>
                      <th className="ClientTH">email</th>
                      <th className="ClientTH">country</th>
-                     <th className="ClientTH2">emailType</th>
+                     <th className="ClientTH2">email type</th>
                      <th className="ClientTH2">sold</th>
                      <th className="ClientTH">owner</th>
                      <th className="ClientTH">first Contact</th>

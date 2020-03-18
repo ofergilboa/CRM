@@ -1,7 +1,6 @@
 .Search .inpS {
   margin-top: 9vh;
   border-radius: 0px;
-  box-shadow: none;
   width: 20%;
   padding: 4px 20px;
   box-sizing: border-box;
@@ -9,13 +8,14 @@
 .Search .button {
   border: 1px solid #555;
   background-color: #e0e0e0;
-  border-radius: 0px;
+  border-radius: 2px;
   border: none;
   color: #2e2e2e;
   padding: 4px 20px;
-  margin-right: 10px;
+  margin: 0px 10px 0px 0px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  height: 28px;
 }

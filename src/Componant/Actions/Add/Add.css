@@ -1,10 +1,15 @@
 .button {
   color: #e6e6ec;
-  margin: 2px 0px 6px ;
+  margin: 2px 0px 6px;
   padding: 3px 12px 2px 12px;
+  border-radius: 2px;
   background-color: #2e2e2e;
   left: 0px;
   font-size: 12px;
+}
+.buttonAdd {
+  width: 100%;
+  margin-top: -3px;
 }
 .inpS {
   border-radius: 0px;

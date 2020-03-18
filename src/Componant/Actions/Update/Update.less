@@ -1,43 +1,64 @@
-@darkBlue: #2e3952;
-@lightGrey: #e6e6ec;
-@lightBlue: #c0d5fd;
-@white: rgb(255, 255, 255);
+@darkBlue       : #2e3952;
+@lightGrey      : #e6e6ec;
+@lightBlue      : #c0d5fd;
+@white          : rgb(255, 255, 255);
 @lighterDarkBlue: #688ad8;
-@x: #5c0505;
-@red: rgb(255, 0, 0);
-@green: rgb(0, 255, 0);
-@blue: rgb(0, 38, 255);
+@x              : #5c0505;
+@red            : rgb(255, 0, 0);
+@green          : rgb(0, 255, 0);
+@blue           : rgb(0, 38, 255);
 
-.button{
-   color: @darkBlue;
-   margin: 2px 0px 6px ;
-   padding: 2px 12px 1px 12px;
+.button {
+   color           : @darkBlue;
+   margin          : 2px 0px 6px;
+   // padding      : 2px 12px 11px 12px;
    background-color: @lightBlue;
-   border: 1px solid #555;
+   border          : 1px solid #555;
    background-color: rgb(224, 224, 224);
-   border-radius: none;
-   border: none;
-   // height: 26px;
-   // box-shadow: 1px 1px 2px @darkBlue;
-   // color: @darkBlue;
-   // padding: 1px 12px 1px 10px;
-   // padding: 4px 20px;
-   margin-right: 10px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 14px;  
+   border-radius   : none;
+   border          : none;
+   height          : 22px;
+   // box-shadow   : 1px 1px 2px @darkBlue;
+   // color        : @darkBlue;
+   // padding      : 1px 12px 1px 10px;
+   // padding      : 4px 20px;
+   margin-right    : 10px;
+   text-align      : center;
+   text-decoration : none;
+   display         : inline-block;
+   font-size       : 14px;
 }
+
 .select {
+   font-family: 'Courier New', Courier, monospace;
+
    // background-color: @lightGrey;
-   // border-radius: 5px;
-   // box-shadow: 1px 2px 4px @darkBlue;
-   color: @darkBlue;
-   padding: 1px 12px 1px 10px;
-   margin-right: 4px;
-   text-align: left;
-   justify-content: left;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 14px;
+   // border-radius   : 5px;
+   // box-shadow      : 1px 2px 4px @darkBlue;
+   color              : @darkBlue;
+   padding            : 4px 12px 2px 10px;
+   margin             : 2px 32px 0px 0px;
+   text-align         : left;
+   justify-content    : left;
+   text-decoration    : none;
+   display            : inline-block;
+   font-size          : 12px;
+   height             : 22px;
+}
+
+.sendDeclare {
+   display        : flex;
+   justify-content: space-between;
+   .buttonSend{
+      margin-left: -30px;
+      margin-top: 3px;
+   }
+   .sale {
+      text-align: right;
+   }
+}
+
+.owner2 {
+   display        : flex;
+   justify-content: space-between;
 }

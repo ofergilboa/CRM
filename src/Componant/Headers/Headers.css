@@ -7,13 +7,14 @@
 .Headers .Header {
   margin-right: 25px;
   text-decoration-line: none;
-  color: #688ad8;
-  padding: 9px;
+  color: #f1f1f1;
+  padding: 12px 9px 12px 9px;
 }
 .Headers a.active {
-  color: #2e2e2e !important;
-  background-color: #fff;
+  color: black  !important;
+  background-color: #797979;
 }
 .App-header a:hover {
   background-color: #fff;
+  background-color: #a1a1a1;
 }

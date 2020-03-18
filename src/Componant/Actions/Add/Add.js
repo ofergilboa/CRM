@@ -62,7 +62,7 @@ class Add extends Component {
                <div>Owner <div>{<input className="inpS" name="owner" value={client.owner} onChange={this.updateState} />}</div></div>
                <div>Email <div>{<input className="inpS" name="email" value={client.email} onChange={this.updateState} />}</div></div>
                <br />
-               <button className="button" onClick={this.addClient}>Add New Client</button>
+               <button className="button buttonAdd" onClick={this.addClient}>ADD NEW CLIENT</button>
             </div>
          </div>)
    }

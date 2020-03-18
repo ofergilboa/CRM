@@ -1,94 +1,121 @@
-@darkBlue: rgb(46, 46, 46);
-@lightGrey: rgb(247, 247, 247);
-@lightBlue: #c0d5fd;
-@white: rgb(255, 255, 255);
+@darkBlue       : rgb(46, 46, 46);
+@lightGrey      : rgb(247, 247, 247);
+// @lightBlue   : #c0d5fd;
+@lightBlue      : rgb(199, 208, 228);
+@white          : rgb(255, 255, 255);
 @lighterDarkBlue: #688ad8;
-@x: #5c0505;
-@red: rgb(255, 0, 0);
-@green: rgb(0, 255, 0);
-@blue: rgb(0, 38, 255);
+@x              : #5c0505;
+@red            : rgb(255, 0, 0);
+@green          : rgb(0, 255, 0);
+@blue           : rgb(0, 38, 255);
 
-.Clients{
-   margin-top: 2vh;
-   width: 92vw;
+.Clients {
+   margin-top      : 2vh;
+   width           : 92vw;
    background-color: @lightGrey;
-   text-align: left;
-   border-collapse: collapse;
-      
-   .Client{
+   text-align      : left;
+   border-collapse : collapse;
+
+   .Client {
       background-color: @lightGrey;
-      text-align: left;
-      .ClientTD{
-         height: 4.5vh;
-         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-         padding: 3px;
-         padding-left: 15px;
-         padding-right: 25px;
-         color: @darkBlue;
+      text-align      : left;
+
+      .ClientTD {
+         height          : 4.5vh;
+         // border-bottom: 1px solid rgba(248, 23, 23, 0.4);
+         border-bottom   : 1px solid @lightBlue;
+         padding         : 3px;
+         padding-left    : 25px;
+         padding-right   : 25px;
+         color           : @darkBlue;
+         font-size       : 13px;
       }
-      .ClientTD2{
+
+      .ClientTD2 {
          .ClientTD();
-         text-align: center;
-         padding-left: 5px;
+         text-align   : center;
+         padding-left : 5px;
          padding-right: 5px;
       }
-      .ClientTH{
+
+      .ClientTH {
          .ClientTD();
-         // border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-         border-top: 1px solid rgba(255, 255, 255, 0.4);
+         border-bottom   : 3px solid @white;
+         border-top      : 1px solid rgba(255, 255, 255, 0.4);
          background-color: rgb(241, 241, 241);
-         font-size: 13px;
-         font-weight: 600;
+         font-size       : 13px;
+         // font-weight  : 600;
       }
-      .ClientTH2{
+
+      .ClientTH2 {
          .ClientTH();
-         text-align: center;
-         padding-left: 5px;
-         padding-right: 5px;
+         text-align   : center;
+         padding-left : 15px;
+         padding-right: 15px;
       }
    }
-}
-tr:hover td{
-   background-color: @white;
-   color: @white;
 }
 
-.PopUp{
-   font-family: 'Courier New', Courier, monospace;
-   margin-top: 14vh;
-   margin-left: 31vw;
-   position: fixed;
-   width: 30vw;
-   height : 25vh;
+tr:hover td {
+   background-color: @white;
+   color           : @white;
+}
+
+.PopUp {
+   font-family     : 'Courier New', Courier, monospace;
+   margin-top      : 14vh;
+   margin-left     : 31vw;
+   position        : fixed;
+   width           : 30vw;
+   height          : 35vh;
+   background-color: #e0e0e0;
    background-color: @darkBlue;
-   display: grid;
-   align-items: center;
+   
+   display        : grid;
+   align-items    : center;
    justify-content: center;
-   color: @lightGrey;
-   border-radius: 15px;
-   box-shadow: 5px 8px 25px 1px black;
-   .inp{
-      background-color: @lightGrey;
-      color: @darkBlue;
-      border-radius: 5px;
-      box-shadow: inset 1px 1px 4px @darkBlue;
-      margin-left:13px; 
-      margin-top:8px; 
-      padding: 3px 0px 2px 6px;
-      left: 0px;
+   color          : @lightGrey;
+   border-radius  : 15px;
+   box-shadow     : 1px 1px 6px 10px white;
+   
+   .inp {
+      font-family     : 'Courier New', Courier, monospace;
+      width        : 100%;
+      padding      : 4px 20px;
+      margin       : 5px 10px 5px 0px;
+      box-sizing   : border-box;
+      border-radius: 0px;
+      padding      : 4px 10px;
+      box-sizing   : border-box;
    }
-   .inpB{
-      color: @darkBlue;
-      margin: 20px 63px 6px ;
-      padding: 3px 55px 3px 55px;
-      border-radius: 5px;
-      background-color: @lightBlue;
+   
+   .inpB {
+      font-family     : 'Courier New', Courier, monospace;
+      color              : @darkBlue;
+      margin             : 10px 5px 6px 0px;
+      padding            : 3px 55px 3px 55px;
+      // border-radius   : 5px;
+      // background-color: @lightBlue;
+      width              : 85%;
+      color              : @lightGrey;
+      // margin          : 2px 0px 6px;
+      // padding         : 3px 12px 2px 12px;
+      border-radius      : 0px;
+      background-color   : @darkBlue;
+      left               : 0px;
+      font-size          : 14px;
+      border: none;
+      box-shadow: 0px 0px 2px 0px white;
    }
-   .xButton{
-      color: @white;
-      margin-left: -26px;
-      padding: 3px 8px 3px 8px;
-      border-radius: 5px;
+   
+   .xButton {
+      border: none;
+      box-shadow: 0px 0px 2px 0px white;
+      font-family     : 'Courier New', Courier, monospace;
+      color           : @white;
+      margin-left     : 6px;
+      padding         : 3px 8px 3px 8px;
+      border-radius   : 0px;
       background-color: @darkBlue;
    }
 }

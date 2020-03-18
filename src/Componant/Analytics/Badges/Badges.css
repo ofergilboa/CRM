@@ -3,20 +3,19 @@
   padding: 20px;
   display: flex;
   justify-content: center;
-  color: #f7f7f7;
   margin-top: 12vh;
   display: inline-block;
+  border: 1px, solid, black;
 }
 .Badges {
+  color: #2e2e2e;
   font-family: 'Courier New', Courier, monospace;
   padding: 15px 30px 15px 30px;
-  background-color: #2e2e2e;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f7f7f7;
   margin: 1vmax;
   margin-top: 3vmax;
-  border-radius: 15px;
-  box-shadow: 0px 0px 18px -2px #0a0a0a;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px -1px #0a0a0a;
 }
