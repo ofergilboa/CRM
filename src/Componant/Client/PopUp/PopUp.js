@@ -40,16 +40,16 @@ class PopUp extends Component {
          // <div>
             <div className="PopUp">
                <div>
-                  name<input className="inp" type="text" name="name" placeholder={this.props.client.name}
+                  Name<input className="inp" type="text" name="name" placeholder={this.props.client.name}
                      value={this.state.name} onChange={this.updateState} />
                </div>
                <div>
-                  country<input className="inp" type="text" name="country" placeholder={this.props.client.country}
+                  Country<input className="inp" type="text" name="country" placeholder={this.props.client.country}
                      value={this.state.country} onChange={this.updateState} />
                </div>
                <div>
-                  <button className="inpB" onClick={this.transferVal}>update</button>
-                  <button className="xButton" onClick={this.hide}>x</button>
+                  <button className="inpB" onClick={this.transferVal}>UPDATE</button>
+                  <button className="xButton" onClick={this.hide}>X</button>
                </div>
             {/* </div> */}
          </div>)

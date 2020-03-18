@@ -35,13 +35,13 @@ class Clients extends Component {
             <table className="Clients">
                <thead>
                   <tr className="Client" >
-                     <th className="ClientTH">name</th>
-                     <th className="ClientTH">email</th>
-                     <th className="ClientTH">country</th>
-                     <th className="ClientTH2">email type</th>
-                     <th className="ClientTH2">sold</th>
-                     <th className="ClientTH">owner</th>
-                     <th className="ClientTH">first Contact</th>
+                     <th className="ClientTH">Name</th>
+                     <th className="ClientTH">Email</th>
+                     <th className="ClientTH">Country</th>
+                     <th className="ClientTH2">Email type</th>
+                     <th className="ClientTH2">Sold</th>
+                     <th className="ClientTH">Owner</th>
+                     <th className="ClientTH">First contact</th>
                   </tr>
                </thead>
                {this.state.show

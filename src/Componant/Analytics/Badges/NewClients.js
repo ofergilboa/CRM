@@ -10,7 +10,7 @@ class NewClients extends Component {
       let month = moment().format('MM')
       let monthShow = moment().format('MMMM')
 
-      let year = moment().format('YY')
+      let year = moment().format('YYYY')
       console.log(moment())
 
       let contact
@@ -23,19 +23,18 @@ class NewClients extends Component {
             // console.log(i, this.props.clients[i].firstContact, this.props.clients[i].name)
             contact = this.props.clients[i].firstContact.split('-')
             monthClient = contact[1]
-            yearClient = contact[0].split(0)
-            yearClient = yearClient[1]
+            yearClient = contact[0]
             // console.log(i, month, monthClient, year, yearClient)
+            console.log(i, month, monthClient, year, yearClient, this.props.clients[i].name)
             if (month === monthClient && year === yearClient) {
                newClients++
-               console.log(i, month, monthClient, year, yearClient, this.props.clients[i].name)
             }
          }
       }
 
       return (
          <div className="Badges">
-            New {monthShow} Clients: {newClients}
+            New {monthShow} Clients: {newClients} 
 
          </div>)
    }

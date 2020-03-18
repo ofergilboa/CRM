@@ -47,17 +47,17 @@ class Update extends Component {
       return (
          <div className="Update">
             <div className="owner">
-               <div list="owners" placeholder="Owner" >Transfer Ownership To </div>
+               <div list="owners" placeholder="Owner" >Transfer ownership to </div>
                <div className="owner2">
                   <select className="select" placeholder="Owner" name="owner" value={this.state.owner} onChange={this.updateState} >
                      {[...owners].map(c => <option value={c}>{c} </option>)}
                   </select> <button className="button" onClick={this.transferOwner}>TRANSFER</button>
                </div>
             </div>
-            <br />
+            {/* <br /> */}
             <div className="sendDeclare" >
                <span className="email" value={this.state.email} onChange={this.updateState}>
-                  <div>Send Email </div>
+                  <div>Send email </div>
                   <select className="select" name="email">
                      <option value="A">A</option>
                      <option value="B">B</option>
@@ -67,6 +67,8 @@ class Update extends Component {
                </span>
                <span className="sale" value={this.state.sale} onChange={this.updateState}>
                   <div>Declare sale</div><button className="button" name="sale" onClick={this.updateState} >DECLARE</button>
+               <br/>
+               <br/>
                </span>
             </div>
 

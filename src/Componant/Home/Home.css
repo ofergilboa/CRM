@@ -9,7 +9,6 @@
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   font-size: calc(28px + 2vmin);
   font-family: 'Courier New', Courier, monospace;
 }

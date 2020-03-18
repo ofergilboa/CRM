@@ -28,9 +28,9 @@ class Search extends Component {
                   placeholder={this.state.filterBy} type="text" onChange={this.updateState} />
 
                <select className="button" name="filterBy" value={this.state.filterBy} onChange={this.updateState}>
-                  <option value="name">name</option>
-                  <option value="owner">owner</option>
-                  <option value="country">country</option>
+                  <option value="name">Name</option>
+                  <option value="owner">Owner</option>
+                  <option value="country">Country</option>
                   {/* <option value="sold">sold</option> */}
                </select>
             </div>

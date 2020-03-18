@@ -34,9 +34,9 @@ class Actions extends Component {
       return (
          <div className="Actions">
             <InputC clients={this.props.clients} a={this.updateStateA} setClient={this.setClient} />
-            <br />
+            {/* <br /> */}
             <Update clients={this.props.clients} getAll={this.props.getAll} transferVal={this.transferVal} />
-            <br />
+            {/* <br /> */}
             <br/>
 
             <Add getAll={this.props.getAll} />
