@@ -1,23 +1,33 @@
 .Home {
+  opacity: 30%;
   margin-top: 7vh;
   height: 93vh;
-  justify-content: center;
   background-size: cover;
   background-image: url('https://static.vecteezy.com/system/resources/previews/000/370/643/original/vector-banner-background-with-abstract-connections-design.jpg');
   width: 100vw;
   background-color: #ffffff;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(28px + 2vmin);
-  font-family: 'Courier New', Courier, monospace;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
 }
-.home1 {
-  position: absolute;
-}
-.Home2 {
+.Home1 {
   color: #000000;
-  margin: -20px 0px 35px 0px;
-  font-size: calc(12px + 2vmin);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: calc(28px + 2vmin);
+  position: absolute;
+  margin-top: 13vh;
+}
+.Home1 .Home2 {
+  color: #000000;
+  margin: -4vh 0px 0px 0px;
+  font-size: calc(14px + 2vmin);
   opacity: 100%;
 }

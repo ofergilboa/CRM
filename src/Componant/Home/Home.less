@@ -10,39 +10,36 @@
 @blue           : rgb(0, 38, 255);
 
 .Home {
-   // opacity        : 30%;
-   margin-top     : 7vh;
-   height         : 93vh;
-   justify-content: center;
-   background-size: cover;
-   background-image    : url('https://static.vecteezy.com/system/resources/previews/000/370/643/original/vector-banner-background-with-abstract-connections-design.jpg');
-   // display             : flex;
-   // flex-direction      : column;
-   // align-items         : center;
-   width               : 100vw;
-   background-color : @white;
+   opacity            : 30%;
+   margin-top         : 7vh;
+   height             : 93vh;
+   background-size    : cover;
+   background-image   : url('https://static.vecteezy.com/system/resources/previews/000/370/643/original/vector-banner-background-with-abstract-connections-design.jpg');
+   width              : 100vw;
+   background-color   : @white;
    background-position: center;
-   display             : flex;
-   // position         : fixed;
-   flex-direction   : column;
-   // align-items         : center;
-   // justify-content     : flex-end;
-   font-size           : calc(28px + 2vmin);
-   font-family         : 'Courier New',Courier, monospace;
-   // color            : rgba(255, 255, 255, 1);
-   // font-weight      : bold;
+   -moz-transform     : scaleY(-1);
+   -o-transform       : scaleY(-1);
+   -webkit-transform  : scaleY(-1);
+   transform          : scaleY(-1);
+   filter             : FlipV;
+   -ms-filter         : "FlipV";
 }
 
-.home1 {
-   position: absolute;
-}
-
-.Home2 {
-   color              : rgb(0, 0, 0);
-   margin: -20px 0px 35px 0px ;
-   // background-color: #fff;
-   font-size          : calc(12px + 2vmin);
-   // color           : @darkBlue;
-   opacity            : 100%;
-   // font-weight     : bold;
+.Home1 {
+   color          : rgb(0, 0, 0);
+   width          : 100vw;
+   display        : flex;
+   justify-content: center;
+   flex-direction : column;
+   font-family    : 'Courier New', Courier, monospace;
+   font-size      : calc(28px + 2vmin);
+   position       : absolute;
+   margin-top     : 13vh;
+   .Home2 {
+      color    : rgb(0, 0, 0);
+      margin   : -4vh 0px 0px 0px;
+      font-size: calc(14px + 2vmin);
+      opacity  : 100%;
+   }
 }
