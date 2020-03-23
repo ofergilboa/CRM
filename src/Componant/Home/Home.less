@@ -9,20 +9,26 @@
 @blue           : rgb(0, 38, 255);
 
 .Home {
-   opacity            : 30%;
-   margin-top         : 7vh;
-   height             : 93vh;
-   background-size    : cover;
-   background-image   : url('https://static.vecteezy.com/system/resources/previews/000/370/643/original/vector-banner-background-with-abstract-connections-design.jpg');
-   width              : 100vw;
-   background-color   : @white;
-   background-position: center;
-   -moz-transform     : scaleY(-1);
-   -o-transform       : scaleY(-1);
-   -webkit-transform  : scaleY(-1);
-   transform          : scaleY(-1);
-   filter             : FlipV;
-   -ms-filter         : "FlipV";
+   opacity               : 30%;
+   margin-top            : 7vh;
+   height                : 93vh;
+   background-size       : cover;
+   // background-image   : url('https://static.vecteezy.com/system/resources/previews/000/370/643/original/vector-banner-background-with-abstract-connections-design.jpg');
+   background-image      : url('https://cdn5.vectorstock.com/i/1000x1000/86/94/abstract-background-network-connect-concept-010-vector-4938694.jpg');
+   width                 : 100vw;
+   background-color      : @white;
+   background-position   : center;
+   // filter             : FlipV;
+   // -moz-transform     : scaleY(-1);
+   // -o-transform       : scaleY(-1);
+   // -webkit-transform  : scaleY(-1);
+   // transform          : scaleY(-1);
+   // -ms-filter         : "FlipV"; 
+   filter        : gray;
+   -moz-filter   : url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+   -o-filter     : url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+   -webkit-filter: grayscale(100%);
+   filter        : url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
 }
 
 .Home1 {
@@ -34,10 +40,11 @@
    font-family    : 'Courier New', Courier, monospace;
    font-size      : calc(28px + 2vmin);
    position       : absolute;
-   margin-top     : 13vh;
+   margin-top     : 30vh;
+
    .Home2 {
       color    : rgb(0, 0, 0);
-      margin   : -4vh 0px 0px 0px;
+      margin   : 3vh 0px 0px 0px;
       font-size: calc(14px + 2vmin);
       opacity  : 100%;
    }

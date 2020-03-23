@@ -63,6 +63,7 @@ tr:hover td {
 }
 .PopUp {
   font-family: 'Courier New', Courier, monospace;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 14vh;
   margin-left: 31vw;
   position: fixed;
@@ -88,6 +89,7 @@ tr:hover td {
 }
 .PopUp .inpB {
   font-family: 'Courier New', Courier, monospace;
+  font-family: 'Montserrat', sans-serif;
   color: #2e2e2e;
   margin: 10px 5px 6px 0px;
   padding: 3px 55px 3px 55px;
@@ -104,6 +106,7 @@ tr:hover td {
   border: none;
   box-shadow: 0px 0px 2px 0px white;
   font-family: 'Courier New', Courier, monospace;
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   margin-left: 6px;
   padding: 3px 8px 3px 8px;

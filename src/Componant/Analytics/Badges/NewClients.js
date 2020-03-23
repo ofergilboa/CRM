@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import moment from 'moment'
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import '../Badges/Badges.css'
 
 
@@ -11,12 +13,13 @@ class NewClients extends Component {
       let monthShow = moment().format('MMMM')
 
       let year = moment().format('YYYY')
-      console.log(moment())
 
       let contact
       let yearClient
       let monthClient
       let clients = this.props.clients
+      let clientsN = this.props.clients.length
+
 
       if (clients[0]) {
          for (let i = 0; i < clients.length; i++) {
@@ -34,7 +37,11 @@ class NewClients extends Component {
 
       return (
          <div className="Badges">
-            New {monthShow} Clients: {newClients} 
+            New {monthShow} Clients 
+            <br />
+            <br />
+
+            <CircularProgressbar className="circle" value={newClients} maxValue={clientsN} text={`${newClients}`} />
 
          </div>)
    }

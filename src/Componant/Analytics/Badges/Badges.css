@@ -1,21 +1,27 @@
 .allBadges {
+  grid-area: b;
+  background-color: blue;
   background-color: #f7f7f7;
-  padding: 20px;
+  color: #2e2e2e;
   display: flex;
-  justify-content: center;
-  margin-top: 12vh;
-  display: inline-block;
-  border: 1px, solid, black;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vw 4vw 3vw 4vw;
 }
 .Badges {
-  color: #2e2e2e;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 15px 30px 15px 30px;
+  background-color: #fff;
+  width: 16vw;
+  min-width: 185px;
+  height: 12vw;
+  min-height: 140px;
+  padding: 2vh 2vw 0vh 1.5vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 1vmax;
-  margin-top: 3vmax;
-  border-radius: 4px;
-  box-shadow: 1px 1px 3px -1px #0a0a0a;
+  border-radius: 20px;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  min-height: 100px;
 }
