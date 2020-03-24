@@ -16,7 +16,7 @@ class OutstandingClients extends Component {
 
       return (
          <div className="Badges">
-            Outstanding Clients
+            Outstanding clients
             <br />
             <br />
 

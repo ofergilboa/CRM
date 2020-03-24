@@ -6,7 +6,7 @@ class SalesSince extends Component {
    render() {
       return (
          <div id="SalesSince">
-            SalesSince
+            Sales since
          </div>)
    }
 }

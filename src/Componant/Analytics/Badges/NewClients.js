@@ -28,7 +28,7 @@ class NewClients extends Component {
             monthClient = contact[1]
             yearClient = contact[0]
             // console.log(i, month, monthClient, year, yearClient)
-            console.log(i, month, monthClient, year, yearClient, this.props.clients[i].name)
+            // console.log(i, month, monthClient, year, yearClient, this.props.clients[i].name)
             if (month === monthClient && year === yearClient) {
                newClients++
             }
@@ -37,7 +37,7 @@ class NewClients extends Component {
 
       return (
          <div className="Badges">
-            New {monthShow} Clients 
+            New {monthShow} clients 
             <br />
             <br />
 

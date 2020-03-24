@@ -36,7 +36,7 @@ class HottestCountry extends Component {
       }
       return (
          <div className="Badges">
-            Hottest Country
+            Hottest country
             <br />
             <br />
 

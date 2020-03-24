@@ -14,7 +14,7 @@ class EmailsSent extends Component {
 
       return (
          <div className="Badges">
-            Emails Sent
+            Emails sent
             <br />
             <br />
 

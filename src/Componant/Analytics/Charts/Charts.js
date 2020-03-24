@@ -11,9 +11,9 @@ class Charts extends Component {
       return (
          <div id="charts">
             {/* Charts */}
-            <TopEmployees/>
-            <SalesByCountry />
-            <SalesSince />
+            <TopEmployees clients={this.props.clients}/>
+            <SalesByCountry clients={this.props.clients}/>
+            <SalesSince clients={this.props.clients}/>
          </div>)
    }
 }
