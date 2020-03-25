@@ -27,6 +27,8 @@ class SalesByCountry extends Component {
             data.push({})
             data[i].country = keys[i]
             data[i].count = countries[keys[i]]
+            data.sort((a, b) => (a.count > b.count) ? -1 : 1)
+
          }
          console.log(data)
       }

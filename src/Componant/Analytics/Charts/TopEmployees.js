@@ -20,34 +20,34 @@ class TopEmployees extends Component {
             }
          }
          let keys = Object.keys(owners)
-         for (let i = 0; i < 5; i++) {
+         for (let i = 0; i < ownersNames.length; i++) {
             console.log(keys[i])
             data.push({})
             data[i].owner = keys[i]
             data[i].count = owners[keys[i]]
          }
+         data.sort((a, b) => (a.count > b.count) ? -1 : 1)
+         data.splice(3)
          console.log(data)
       }
       return (
 
          <div id="TopEmployees">
             Top employees
-            <ResponsiveContainer id="SalesByCountryChart" width="100%" height="85%">
+            <ResponsiveContainer id="SalesByCountryChart" width="100%" height="65%">
                <BarChart
-                  layout="vertical"
+               layout="vertical"
                   width={500}
                   height={300}
                   data={data}
-                  margin={{
-                     top: 5, right: 30, left: 10, bottom: 5,
-                  }}
+                  margin={{ top: 5, right: 30, left: 10, bottom: -5}}
                >
                   {/* <CartesianGrid strokeDasharray="3 3" /> */}
-                  <XAxis dataKey="owner" label={{ angle: 0 }} interval={0} angle={-30} tick={{ fontSize: 9, fontWeight: "bold", textAnchor: 'end' }} />
-                  <YAxis tick={{ fontSize: 12, fontWeight: "bold" }} />
+                  <XAxis type= "number" label={{ angle: 0}} interval={0} angle={0} tick={{ fontSize: 9, fontWeight: "bold" }} />
+                  <YAxis dataKey="owner" type="category" tick={{ fontSize: 9, fontWeight: "bold" }} />
                   <Tooltip />
                   {/* <Legend /> */}
-                  <Bar dataKey="count" fill="#3e98c7" />
+                  <Bar dataKey="count" barSize={15} fill="#3e98c7" />
                   {/* <Bar dataKey="uv" fill="#82ca9d" /> */}
                </BarChart>
             </ResponsiveContainer>
