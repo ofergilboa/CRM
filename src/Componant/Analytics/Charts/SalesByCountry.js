@@ -4,38 +4,61 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Resp
 
 class SalesByCountry extends Component {
 
-   render() {
+   constructor() {
+      super()
+      this.state = {
+         category: "country"
+      }
+   }
 
+   changeHandler = (event) => {
+      console.log(event.target.value)
+      this.setState({
+         category: event.target.value
+      })
+      
+   }
+
+   render() {
+      console.log(this.state.category)
+      let item
       let data = []
-      let countries = {}
-      let countryNames = []
-      let country
+      let categoryItems = {}
+      let categoryItemsNames = []
       let clients = this.props.clients
 
       if (clients[0]) {
          for (let i = 0; i < clients.length; i++) {
-            country = this.props.clients[i].country
-            if (countries[country]) { countries[country]++ }
+            item = this.props.clients[i][this.state.category]
+            if (categoryItems[this.state.category] === "-") { console.log(i) }
+            if (categoryItems[item]) { categoryItems[item]++ }
             else {
-               countries[country] = 1
-               countryNames.push(country)
+               categoryItems[item] = 1
+               categoryItemsNames.push(item)
             }
          }
-         let keys = Object.keys(countries)
-         for (let i = 0; i < countryNames.length; i++) {
-            console.log(keys[i])
+         let keys = Object.keys(categoryItems)
+         for (let i = 0; i < categoryItemsNames.length; i++) {
             data.push({})
-            data[i].country = keys[i]
-            data[i].count = countries[keys[i]]
-            data.sort((a, b) => (a.count > b.count) ? -1 : 1)
-
+            data[i][this.state.category] = keys[i]
+            console.log(i, keys[i], data[i])
+            data[i].count = categoryItems[keys[i]]
          }
+         data.sort((a, b) => (a.count > b.count) ? -1 : 1)
          console.log(data)
       }
 
       return (
          <div id="SalesByCountry">
-            Sales by country
+            {/* Sales by country */}
+            <div id="sales-by-container">Sales By
+                <select id="salesByButton" name="category" value={this.state.category} onChange={this.changeHandler}>
+                  <option value="country">Country</option>
+                  <option value="owner">Owner</option>
+                  <option value="emailType">Email</option>
+                  <option value="sold">Sold</option>
+               </select>
+            </div>
             <ResponsiveContainer id="SalesByCountryChart" width="100%" height="85%">
                <BarChart
                   width={500}
@@ -46,8 +69,8 @@ class SalesByCountry extends Component {
                   }}
                >
                   {/* <CartesianGrid strokeDasharray="3 3" /> */}
-                  <XAxis dataKey="country" interval={0} angle={-30} tick={{fontSize: 9, fontWeight:"bold", textAnchor: 'end'}} />
-                  <YAxis tick={{fontSize: 12, fontWeight:"bold"}}/>
+                  <XAxis dataKey={this.state.category} interval={0} angle={-15} tick={{ fontSize: 9, fontWeight: "bold", textAnchor: 'end' }} />
+                  <YAxis tick={{ fontSize: 12, fontWeight: "bold" }} />
                   <Tooltip />
                   {/* <Legend /> */}
                   <Bar dataKey="count" fill="#3e98c7" />

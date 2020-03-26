@@ -10,6 +10,7 @@ class Analytics extends Component {
          <div id="analytics">
             <Badges clients={this.props.clients} />
             <Charts clients={this.props.clients} />
+            
          </div>)
    }
 }

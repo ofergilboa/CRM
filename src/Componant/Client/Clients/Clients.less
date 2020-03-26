@@ -1,5 +1,6 @@
 @darkBlue       : rgb(46, 46, 46);
 @lightGrey      : rgb(247, 247, 247);
+@blueish        :#3e98c7;
 @lightBlue      : rgb(199, 208, 228);
 @white          : rgb(255, 255, 255);
 @lighterDarkBlue: #688ad8;
@@ -20,16 +21,17 @@
       text-align      : left;
 
       .ClientTD {
-         height          : 4.5vh;
-         border-bottom   : 1px solid @lightBlue;
-         padding         : 3px;
-         padding-left    : 25px;
-         padding-right   : 25px;
-         color           : @darkBlue;
-         font-size       : 13px;
+         height       : 4.5vh;
+         border-bottom: 1px solid @lightBlue;
+         padding      : 3px;
+         padding-left : 25px;
+         padding-right: 25px;
+         color        : @darkBlue;
+         font-size    : 13px;
       }
 
       .ClientTD2 {
+         border-radius: 5px;
          .ClientTD();
          text-align   : center;
          padding-left : 5px;
@@ -42,10 +44,12 @@
          border-top      : 1px solid rgba(255, 255, 255, 0.4);
          background-color: rgb(241, 241, 241);
          font-size       : 13px;
+         background-color: @blueish ;
       }
-
+      
       .ClientTH2 {
          .ClientTH();
+         background-color: @blueish ;
          text-align   : center;
          padding-left : 15px;
          padding-right: 15px;
@@ -60,7 +64,7 @@ tr:hover td {
 
 .PopUp {
    font-family     : 'Courier New', Courier, monospace;
-   font-family: 'Montserrat', sans-serif;
+   font-family     : 'Montserrat', sans-serif;
    margin-top      : 14vh;
    margin-left     : 31vw;
    position        : fixed;
@@ -68,16 +72,17 @@ tr:hover td {
    height          : 35vh;
    background-color: #e0e0e0;
    background-color: @darkBlue;
-   
+   // background-color: @blueish;
+
    display        : grid;
    align-items    : center;
    justify-content: center;
    color          : @lightGrey;
    border-radius  : 15px;
    box-shadow     : 1px 1px 6px 10px white;
-   
+
    .inp {
-      font-family     : 'Courier New', Courier, monospace;
+      font-family  : 'Courier New', Courier, monospace;
       width        : 100%;
       padding      : 4px 20px;
       margin       : 5px 10px 5px 0px;
@@ -86,32 +91,36 @@ tr:hover td {
       padding      : 4px 10px;
       box-sizing   : border-box;
    }
-   
+
    .inpB {
       font-family     : 'Courier New', Courier, monospace;
-      font-family: 'Montserrat', sans-serif;
-      color              : @darkBlue;
-      margin             : 10px 5px 6px 0px;
-      padding            : 3px 55px 3px 55px;
-      width              : 85%;
-      color              : @lightGrey;
-      border-radius      : 0px;
-      background-color   : @darkBlue;
-      left               : 0px;
-      font-size          : 14px;
-      border: none;
-      box-shadow: 0px 0px 2px 0px white;
+      font-family     : 'Montserrat', sans-serif;
+      // color           : @darkBlue;
+      margin          : 10px 5px 6px 0px;
+      padding         : 3px 55px 3px 55px;
+      width           : 85%;
+      color           : @lightGrey;
+      // color           : @darkBlue;
+      border-radius   : 0px;
+      background-color: @darkBlue;
+      // background-color: @blueish;
+      left            : 0px;
+      font-size       : 14px;
+      border          : none;
+      box-shadow      : 0px 0px 2px 0px white;
    }
    
    .xButton {
-      border: none;
-      box-shadow: 0px 0px 2px 0px white;
+      border          : none;
+      box-shadow      : 0px 0px 2px 0px white;
       font-family     : 'Courier New', Courier, monospace;
-      font-family: 'Montserrat', sans-serif;
+      font-family     : 'Montserrat', sans-serif;
       color           : @white;
+      // color           : @darkBlue;
       margin-left     : 6px;
       padding         : 3px 8px 3px 8px;
       border-radius   : 0px;
       background-color: @darkBlue;
+      // background-color: @blueish;
    }
 }

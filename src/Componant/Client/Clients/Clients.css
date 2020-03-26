@@ -19,6 +19,7 @@
   font-size: 13px;
 }
 .Clients .Client .ClientTD2 {
+  border-radius: 5px;
   height: 4.5vh;
   border-bottom: 1px solid #c7d0e4;
   padding: 3px;
@@ -41,6 +42,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   background-color: #f1f1f1;
   font-size: 13px;
+  background-color: #3e98c7;
 }
 .Clients .Client .ClientTH2 {
   height: 4.5vh;
@@ -53,6 +55,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   background-color: #f1f1f1;
   font-size: 13px;
+  background-color: #3e98c7;
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -90,7 +93,6 @@ tr:hover td {
 .PopUp .inpB {
   font-family: 'Courier New', Courier, monospace;
   font-family: 'Montserrat', sans-serif;
-  color: #2e2e2e;
   margin: 10px 5px 6px 0px;
   padding: 3px 55px 3px 55px;
   width: 85%;

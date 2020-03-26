@@ -21,20 +21,20 @@ class TopEmployees extends Component {
          }
          let keys = Object.keys(owners)
          for (let i = 0; i < ownersNames.length; i++) {
-            console.log(keys[i])
+            // console.log(keys[i])
             data.push({})
             data[i].owner = keys[i]
-            data[i].count = owners[keys[i]]
+            data[i].clients = owners[keys[i]]
          }
-         data.sort((a, b) => (a.count > b.count) ? -1 : 1)
+         data.sort((a, b) => (a.clients > b.clients) ? -1 : 1)
          data.splice(3)
-         console.log(data)
+         // console.log(data)
       }
       return (
 
          <div id="TopEmployees">
             Top employees
-            <ResponsiveContainer id="SalesByCountryChart" width="100%" height="65%">
+            <ResponsiveContainer id="SalesByCountryChart" width="100%" height="100%">
                <BarChart
                layout="vertical"
                   width={500}
@@ -47,7 +47,7 @@ class TopEmployees extends Component {
                   <YAxis dataKey="owner" type="category" tick={{ fontSize: 9, fontWeight: "bold" }} />
                   <Tooltip />
                   {/* <Legend /> */}
-                  <Bar dataKey="count" barSize={15} fill="#3e98c7" />
+                  <Bar dataKey="clients" barSize={20} fill="#3e98c7" />
                   {/* <Bar dataKey="uv" fill="#82ca9d" /> */}
                </BarChart>
             </ResponsiveContainer>
