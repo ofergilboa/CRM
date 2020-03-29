@@ -6,8 +6,8 @@ import axios from 'axios'
 import './Actions.css'
 
 
-// let route = `http://localhost:8989/` // for local
-let route= `/` //for heroku
+let route = `http://localhost:8989/` // for local
+// let route= `/` //for heroku
 
 class Actions extends Component {
    constructor() {
