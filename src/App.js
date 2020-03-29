@@ -8,8 +8,8 @@ import Actions from './Componant/Actions/Actions';
 import Analytics from './Componant/Analytics/Analytics';
 import Home from './Componant/Home/Home';
 // import clients from './data'; //for loading clients to db
-let route = `http://localhost:8989/` // for local
-// let route = `/` //for heroku
+// let route = `http://localhost:8989/` // for local
+let route = `/` //for heroku
 // packaje.json: "start": "node server.js", //for heroku
 // packaje.json: "start": "react-scripts start", //for local
 
