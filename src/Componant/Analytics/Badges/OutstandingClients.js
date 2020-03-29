@@ -19,8 +19,12 @@ class OutstandingClients extends Component {
             Outstanding clients
             <br />
             <br />
-
-            <CircularProgressbar className="circle" value={notSold} maxValue={clients} text={`${notSold}`} />
+            <div className="badgeStats">
+               <CircularProgressbar className="circle" value={notSold} maxValue={clients} text={`${notSold}`} />
+               <div className="percent">
+                  <div>{percent}% </div>
+               </div>
+            </div>
 
          </div>)
    }

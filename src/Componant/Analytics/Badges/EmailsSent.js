@@ -12,14 +12,21 @@ class EmailsSent extends Component {
 
       this.props.clients.forEach(c => c.emailType ? emailsSent++ : null)
 
+      let percent = 100 / clientsN * emailsSent
+      percent = percent.toFixed(1)
+
       return (
          <div className="Badges">
             Emails sent
             <br />
             <br />
-
-            <CircularProgressbar className="circle" value={emailsSent} maxValue={clientsN} text={`${emailsSent}`} />
-
+            <div className="badgeStats">
+               <CircularProgressbar className="circle" value={emailsSent} maxValue={clientsN} text={`${emailsSent}`} />
+               <div className="percent">
+                  <div>{percent}% </div>
+                  {/* <div >{emailsSent} clients</div> */}
+               </div>
+            </div>
          </div>)
    }
 }

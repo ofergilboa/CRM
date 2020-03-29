@@ -4,8 +4,8 @@
   background-color: #f7f7f7;
   color: #2e2e2e;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "te ss ss" "sc ss ss";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "te ss ss" "te ss ss" "te ss ss" "sc ss ss";
   margin: 2vw 4vw 0vw 4vw;
 }
 #charts #SalesByCountry {
@@ -31,13 +31,36 @@
   text-decoration: none;
   font-size: 14px;
 }
-#charts #SalesSince {
+#charts #ClientCount {
   border-radius: 20px;
   grid-area: sc;
+  height: 55px;
   background-color: green;
   background-color: white;
   padding: 1vw 0vw 0vw 0vw;
   margin: 3vh 0vw 0vh 0vw;
+  position: relative;
+}
+#charts #ClientCount hr {
+  width: 85%;
+  height: 9px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+}
+#charts hr#hr2 {
+  position: absolute;
+  top: 10;
+  left: 7.5%;
+  width: 30%;
+  background-color: #3e98c7;
+}
+#charts #hr1 {
+  position: absolute;
+  top: 10;
+  left: 7.5%;
+  background-color: #e3e3e3;
+  margin-top: 20px;
 }
 #charts #TopEmployees {
   border-radius: 20px;

@@ -46,7 +46,7 @@ class Update extends Component {
 
       return (
          <div className="Update">
-            <div className="owner">
+            <div className="owner" >
                <div list="owners" placeholder="Owner" >Transfer ownership to </div>
                <div className="owner2">
                   <select className="select" placeholder="Owner" name="owner" value={this.state.owner} onChange={this.updateState} >
@@ -67,8 +67,8 @@ class Update extends Component {
                </span>
                <span className="sale" value={this.state.sale} onChange={this.updateState}>
                   <div>Declare sale</div><button className="button" name="sale" onClick={this.updateState} >DECLARE</button>
-               <br/>
-               <br/>
+                  <br />
+                  <br />
                </span>
             </div>
 

@@ -1,6 +1,7 @@
 @lightGrey : rgb(247, 247, 247);
 @darkBlue  : rgb(46, 46, 46);
-
+@blueish   :#3e98c7;
+@circleBackground: #e3e3e3;
 
 #charts {
    display         : grid;
@@ -9,8 +10,8 @@
    color           : @darkBlue;
 
    grid-template-columns   : 1fr 1fr 1fr;
-   grid-template-rows      : 1fr 1fr;
-   grid-template-areas     : "te ss ss""sc ss ss";
+   grid-template-rows      : 1fr 1fr 1fr 1fr;
+   grid-template-areas     : "te ss ss""te ss ss""te ss ss""sc ss ss";
    // padding              : 2vh;
    margin                  : 2vw 4vw 0vw 4vw;
 
@@ -42,13 +43,42 @@
       }
    }
 
-   #SalesSince {
+   #ClientCount {
       border-radius   : 20px;
       grid-area       : sc;
+      height          : 55px;
       background-color: green;
       background-color: white;
       padding         : 1vw 0vw 0vw 0vw;
       margin          : 3vh 0vw 0vh 0vw;
+      position        : relative;
+
+      hr {
+         width        : 85%;
+         height       : 9px;
+         margin-top   : 10px;
+         border       : none;
+         border-radius: 5px;
+         // position     : absolute;
+         // top          : 10;
+         // left         : 7.5%;
+      }
+   }
+
+   hr#hr2 {
+      position        : absolute;
+      top             : 10;
+      left            : 7.5%;
+      width           : 30%;
+      background-color: @blueish;
+   }
+
+   #hr1 {
+      position        : absolute;
+      top             : 10;
+      left            : 7.5%;
+      background-color: @circleBackground;
+      margin-top      : 20px;
    }
 
    #TopEmployees {

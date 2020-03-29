@@ -27,14 +27,14 @@ class TopEmployees extends Component {
             data[i].clients = owners[keys[i]]
          }
          data.sort((a, b) => (a.clients > b.clients) ? -1 : 1)
-         data.splice(3)
+         data.splice(5)
          // console.log(data)
       }
       return (
 
          <div id="TopEmployees">
             Top employees
-            <ResponsiveContainer id="SalesByCountryChart" width="100%" height="100%">
+            <ResponsiveContainer id="SalesByCountryChart" width="100%" height="90%">
                <BarChart
                layout="vertical"
                   width={500}
@@ -47,7 +47,7 @@ class TopEmployees extends Component {
                   <YAxis dataKey="owner" type="category" tick={{ fontSize: 9, fontWeight: "bold" }} />
                   <Tooltip />
                   {/* <Legend /> */}
-                  <Bar dataKey="clients" barSize={20} fill="#3e98c7" />
+                  <Bar dataKey="clients" barSize={15} fill="#3e98c7" />
                   {/* <Bar dataKey="uv" fill="#82ca9d" /> */}
                </BarChart>
             </ResponsiveContainer>

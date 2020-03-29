@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../Charts/Charts.css'
 import TopEmployees from './TopEmployees'
 import SalesByCountry from './SalesByCountry'
-import SalesSince from './SalesSince'
+import ClientCount from './ClientCount'
 
 
 
@@ -13,7 +13,7 @@ class Charts extends Component {
             {/* Charts */}
             <TopEmployees clients={this.props.clients}/>
             <SalesByCountry clients={this.props.clients}/>
-            <SalesSince clients={this.props.clients}/>
+            <ClientCount clients={this.props.clients}/>
          </div>)
    }
 }

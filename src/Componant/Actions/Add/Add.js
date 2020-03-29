@@ -55,7 +55,7 @@ class Add extends Component {
       return (
          <div>
             <div >
-               <div className="center">ADD CLIENT</div>
+               <div className="center">Add Client</div>
                <br />
                <div>Name <div>{<input className="inpS" name="name" value={client.name} onChange={this.updateState} />}</div></div>
                <div>Country <div>{<input className="inpS" name="country" value={client.country} onChange={this.updateState} />}</div></div>

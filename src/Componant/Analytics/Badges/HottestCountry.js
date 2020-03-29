@@ -34,19 +34,22 @@ class HottestCountry extends Component {
             }
          }
       }
+
+      let percent = 100 / clientsN * hottestCountryCount
+      percent = percent.toFixed(1)
+
       return (
          <div className="Badges">
             Hottest country
             <br />
             <br />
-
-            <CircularProgressbar className="circle" value={hottestCountryCount} maxValue={clientsN} text={`${hottestCountry}`}/>
-            {/* {<CircularProgressbarWithChildren className="circle" value={hottestCountryCount} maxValue={clientsN}> */}
-               {/* {`${hottestCountry} ${hottestCountryCount}`} */}
-               {/* <di style={{ fontSize: 20, marginTop: 145 }}>9</di> */}
-               {/* <div>{hottestCountry}</div> */}
-               {/* <div>{hottestCountryCount}</div> */}
-            {/* </CircularProgressbarWithChildren>} */}
+            <div className="badgeStats">
+               <CircularProgressbar className="circle" value={hottestCountryCount} maxValue={clientsN} text={`${hottestCountry}`} />
+               <div className="percent">
+                  <div>{percent}% </div>
+                  <div >{hottestCountryCount} clients</div>
+               </div>
+            </div>
          </div>)
    }
 }

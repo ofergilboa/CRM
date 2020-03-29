@@ -28,7 +28,7 @@ class InputC extends Component {
    render() {
       return (
          <div >
-            <div className="center"> UPDATE CLIENT</div>
+            <div className="center"> Update Client</div>
             <br />
             <div> Client <div>
                <input list="clients" name="client" className="inpS"

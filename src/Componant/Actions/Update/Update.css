@@ -1,6 +1,6 @@
 .button {
   color: #2e2e2e;
-  margin: 2px 0px 6px;
+  margin: 0px 0px 6px;
   background-color: #c0d5fd;
   border: 1px solid #555;
   background-color: #e0e0e0;
@@ -14,8 +14,8 @@
   font-size: 14px;
 }
 .select {
-  padding: 4px 12px 2px 10px;
-  margin: 4px 32px 0px 0px;
+  padding: 1px 12px 2px 10px;
+  margin: 4px 32px 15px 0px;
   display: inline-block;
   font-size: 12px;
   height: 22px;
@@ -35,6 +35,9 @@
 }
 .sendDeclare .sale {
   text-align: right;
+}
+.owner {
+  margin: 10px 0px 0px 0px;
 }
 .owner2 {
   display: flex;

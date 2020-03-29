@@ -34,14 +34,20 @@ class NewClients extends Component {
             }
          }
       }
+      let percent = 100 / clientsN * newClients
+      percent = percent.toFixed(1)
 
       return (
          <div className="Badges">
-            New {monthShow} clients 
+            New {monthShow} clients
             <br />
             <br />
-
-            <CircularProgressbar className="circle" value={newClients} maxValue={clientsN} text={`${newClients}`} />
+            <div className="badgeStats">
+               <CircularProgressbar className="circle" value={newClients} maxValue={clientsN} text={`${newClients}`} />
+               <div className="percent">
+                  <div>{percent}% </div>
+               </div>
+            </div>
 
          </div>)
    }
